@@ -7,10 +7,63 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
-
+final class LoginViewController: UIViewController {
+    
+    // MARK: - IBOutlets
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var errorEmailLabel: UILabel!
+    @IBOutlet weak var errorPasswordLabel: UILabel!
+    @IBOutlet weak var loadingView: UIView!
+    
+    private var viewModel: LoginViewModel
+    
+    // MARK: - Inits
+    init(viewModel: LoginViewModel = LoginViewModel()) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setObservers()
+    }
+    
+    // MARK: - IBAction
+    @IBAction func didTapLoginButton(_ sender: Any) {
+        viewModel.onLoginButton(email: emailTextField.text, password: passwordTextField.text)
+    }
+}
 
+
+extension LoginViewController {
+    private func setObservers() {
+        viewModel.loginViewState = { [weak self] status in
+            switch status {
+            case .loading(let isLoading):
+                self?.loadingView.isHidden = !isLoading
+                self?.errorEmailLabel.isHidden = true
+                self?.errorPasswordLabel.isHidden = true
+            case .loaded:
+                self?.loadingView.isHidden = true
+                self?.navigateToHome()
+            case .showErrorEmail(let error):
+                self?.errorEmailLabel.text = error
+                self?.errorEmailLabel.isHidden = (error == nil || error?.isEmpty == true)
+            case .showErrorPassword(let error):
+                self?.errorPasswordLabel.text = error
+                self?.errorPasswordLabel.isHidden = (error == nil || error?.isEmpty == true)
+            }
+        }
+    }
+    private func navigateToHome() {
+        let nextVC = HomeTableViewController()
+        navigationController?.setViewControllers([nextVC], animated: true)
     }
 }

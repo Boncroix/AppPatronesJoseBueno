@@ -17,6 +17,26 @@ protocol LoginUseCaseProtocol {
 
 final class LoginUseCase: LoginUseCaseProtocol {
     
+    private var token: String? {
+        get {
+            if let token = LocalDataModel.getToken(){
+                return token
+            }
+            return nil
+        }
+        set {
+            if let token = newValue {
+                LocalDataModel.save(token: token)
+            }
+        }
+    }
+    
+    private let client: APIClientProtocol
+    
+    init(client: APIClientProtocol = APIClient()) {
+        self.client = client
+    }
+    
     func login(user: String,
                password: String,
                onSuscces: @escaping (String?) -> Void,
@@ -38,30 +58,15 @@ final class LoginUseCase: LoginUseCaseProtocol {
         urlRequest.httpMethod = HTTPMethods.post
         urlRequest.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
         
-        let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
-            guard error == nil else {
-                onError(.other)
-                return
+        client.jwt(urlRequest) { [weak self] result in
+            switch result {
+            case let .success(token):
+                self?.token = token
+                onSuscces(token)
+            case let .failure(error):
+                onError(error)
             }
-            guard let data = data else {
-                onError(.noData)
-                return
-            }
-            guard let httpResponse = (response as? HTTPURLResponse),
-                  httpResponse.statusCode == HTTPResponseCodes.SUCCESS else {
-                onError(.errorCode((response as? HTTPURLResponse)?.statusCode))
-                return
-            }
-            
-            guard let token = String(data: data, encoding: .utf8) else {
-                onError(.tokenFormatError)
-                return
-            }
-            
-            onSuscces(token)
-            
         }
-        task.resume()
     }
 }
 

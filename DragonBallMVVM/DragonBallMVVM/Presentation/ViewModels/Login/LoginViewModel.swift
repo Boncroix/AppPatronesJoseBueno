@@ -73,6 +73,8 @@ final class LoginViewModel {
                     errorMessage = "decoding"
                 case .other:
                     errorMessage = "other"
+                case .encoding:
+                    errorMessage = "encoding"
                 }
                 self?.loginViewState?(.errorNetwor(errorMessage))
             }

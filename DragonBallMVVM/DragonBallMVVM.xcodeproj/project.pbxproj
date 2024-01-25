@@ -47,6 +47,18 @@
 		42DC87EA2B61A8A800250F82 /* HTTPResponseCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87E92B61A8A800250F82 /* HTTPResponseCodes.swift */; };
 		42DC87EB2B61A8A800250F82 /* HTTPResponseCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87E92B61A8A800250F82 /* HTTPResponseCodes.swift */; };
 		42DC87EC2B61A8A800250F82 /* HTTPResponseCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87E92B61A8A800250F82 /* HTTPResponseCodes.swift */; };
+		42DC87EE2B62E37600250F82 /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87ED2B62E37600250F82 /* HomeUseCase.swift */; };
+		42DC87EF2B62E37600250F82 /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87ED2B62E37600250F82 /* HomeUseCase.swift */; };
+		42DC87F02B62E37600250F82 /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87ED2B62E37600250F82 /* HomeUseCase.swift */; };
+		42DC87F22B62E44D00250F82 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87F12B62E44D00250F82 /* HeroModel.swift */; };
+		42DC87F32B62E44D00250F82 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87F12B62E44D00250F82 /* HeroModel.swift */; };
+		42DC87F42B62E44D00250F82 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87F12B62E44D00250F82 /* HeroModel.swift */; };
+		42DC87FD2B62EDE000250F82 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87FC2B62EDE000250F82 /* APIClient.swift */; };
+		42DC87FE2B62EDE000250F82 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87FC2B62EDE000250F82 /* APIClient.swift */; };
+		42DC87FF2B62EDE000250F82 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87FC2B62EDE000250F82 /* APIClient.swift */; };
+		42DC88012B62F6AD00250F82 /* LocalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88002B62F6AD00250F82 /* LocalDataModel.swift */; };
+		42DC88022B62F6AD00250F82 /* LocalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88002B62F6AD00250F82 /* LocalDataModel.swift */; };
+		42DC88032B62F6AD00250F82 /* LocalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88002B62F6AD00250F82 /* LocalDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +101,10 @@
 		42DC87E12B61A7CB00250F82 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		42DC87E52B61A83C00250F82 /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
 		42DC87E92B61A8A800250F82 /* HTTPResponseCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseCodes.swift; sourceTree = "<group>"; };
+		42DC87ED2B62E37600250F82 /* HomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCase.swift; sourceTree = "<group>"; };
+		42DC87F12B62E44D00250F82 /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
+		42DC87FC2B62EDE000250F82 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		42DC88002B62F6AD00250F82 /* LocalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				42DC87D82B61A68500250F82 /* LoginUseCase.swift */,
+				42DC87ED2B62E37600250F82 /* HomeUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -225,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				42DC87C32B618D5E00250F82 /* LoginSatatusLoad.swift */,
+				42DC87F12B62E44D00250F82 /* HeroModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -232,6 +250,7 @@
 		42DC87A02B61453D00250F82 /* Local */ = {
 			isa = PBXGroup;
 			children = (
+				42DC88002B62F6AD00250F82 /* LocalDataModel.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -239,6 +258,7 @@
 		42DC87A12B61454900250F82 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				42DC87FC2B62EDE000250F82 /* APIClient.swift */,
 				42DC87DC2B61A73E00250F82 /* BaseNetwork */,
 			);
 			path = Network;
@@ -425,11 +445,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				42DC87EA2B61A8A800250F82 /* HTTPResponseCodes.swift in Sources */,
+				42DC87FD2B62EDE000250F82 /* APIClient.swift in Sources */,
+				42DC87F22B62E44D00250F82 /* HeroModel.swift in Sources */,
 				42DC87E62B61A83C00250F82 /* HTTPMethods.swift in Sources */,
 				42DC87D22B61936500250F82 /* HomeTableViewController.swift in Sources */,
 				42DC87C02B618B5E00250F82 /* LoginViewModel.swift in Sources */,
 				42DC87C42B618D5E00250F82 /* LoginSatatusLoad.swift in Sources */,
 				42DC87B82B6185EA00250F82 /* LoginViewController.swift in Sources */,
+				42DC88012B62F6AD00250F82 /* LocalDataModel.swift in Sources */,
+				42DC87EE2B62E37600250F82 /* HomeUseCase.swift in Sources */,
 				42DC87D92B61A68500250F82 /* LoginUseCase.swift in Sources */,
 				42DC876A2B60EA1700250F82 /* AppDelegate.swift in Sources */,
 				42DC87E22B61A7CB00250F82 /* NetworkError.swift in Sources */,
@@ -447,10 +471,14 @@
 				42DC87812B60EA1900250F82 /* DragonBallMVVMTests.swift in Sources */,
 				42DC87C12B618B5E00250F82 /* LoginViewModel.swift in Sources */,
 				42DC87DF2B61A75200250F82 /* EndPoints.swift in Sources */,
+				42DC87F32B62E44D00250F82 /* HeroModel.swift in Sources */,
 				42DC87E72B61A83C00250F82 /* HTTPMethods.swift in Sources */,
 				42DC87C52B618D5E00250F82 /* LoginSatatusLoad.swift in Sources */,
 				42DC87EB2B61A8A800250F82 /* HTTPResponseCodes.swift in Sources */,
+				42DC88022B62F6AD00250F82 /* LocalDataModel.swift in Sources */,
+				42DC87FE2B62EDE000250F82 /* APIClient.swift in Sources */,
 				42DC87D32B61936500250F82 /* HomeTableViewController.swift in Sources */,
+				42DC87EF2B62E37600250F82 /* HomeUseCase.swift in Sources */,
 				42DC87DA2B61A68500250F82 /* LoginUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,11 +488,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				42DC87EC2B61A8A800250F82 /* HTTPResponseCodes.swift in Sources */,
+				42DC87FF2B62EDE000250F82 /* APIClient.swift in Sources */,
+				42DC87F42B62E44D00250F82 /* HeroModel.swift in Sources */,
 				42DC87E82B61A83C00250F82 /* HTTPMethods.swift in Sources */,
 				42DC87D42B61936500250F82 /* HomeTableViewController.swift in Sources */,
 				42DC87C22B618B5E00250F82 /* LoginViewModel.swift in Sources */,
 				42DC87C62B618D5E00250F82 /* LoginSatatusLoad.swift in Sources */,
 				42DC87BA2B6185EA00250F82 /* LoginViewController.swift in Sources */,
+				42DC88032B62F6AD00250F82 /* LocalDataModel.swift in Sources */,
+				42DC87F02B62E37600250F82 /* HomeUseCase.swift in Sources */,
 				42DC87DB2B61A68500250F82 /* LoginUseCase.swift in Sources */,
 				42DC878D2B60EA1900250F82 /* DragonBallMVVMUITestsLaunchTests.swift in Sources */,
 				42DC87E42B61A7CB00250F82 /* NetworkError.swift in Sources */,

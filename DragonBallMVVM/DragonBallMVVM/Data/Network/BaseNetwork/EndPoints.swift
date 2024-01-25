@@ -10,4 +10,5 @@ import Foundation
 enum EndPoints: String {
     case url = "https://dragonball.Keepcoding.education/api"
     case login = "/auth/login"
+    case allHeros = "/heros/all"
 }

@@ -14,5 +14,6 @@ enum NetworkError: Error {
     case errorCode(Int?)
     case tokenFormatError
     case decoding
+    case encoding
     case other
 }

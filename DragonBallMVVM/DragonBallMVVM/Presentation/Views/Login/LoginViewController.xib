@@ -27,6 +27,9 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo3" translatesAutoresizingMaskIntoConstraints="NO" id="6jA-iU-oyc">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                 </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="VBN-zN-Inf">
+                    <rect key="frame" x="12" y="0.0" width="369" height="358"/>
+                </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="oIJ-BI-hyH">
                     <rect key="frame" x="12" y="584" width="369" height="184"/>
                     <subviews>
@@ -41,12 +44,12 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="44" id="xx5-V4-Bml"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <textInputTraits key="textInputTraits" textContentType="email"/>
                                         </textField>
                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error de Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j54-5X-QkS">
                                             <rect key="frame" x="0.0" y="0.0" width="369" height="0.0"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" systemColor="systemRedColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -60,12 +63,12 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="44" id="HdN-SN-j64"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                         </textField>
                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error de password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5S-pq-x6Z">
                                             <rect key="frame" x="0.0" y="0.0" width="369" height="0.0"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" systemColor="systemRedColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -114,8 +117,11 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oIJ-BI-hyH" secondAttribute="trailing" constant="12" id="MZD-Tk-YDc"/>
                 <constraint firstItem="XYh-WQ-oyA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Okx-97-ttb"/>
                 <constraint firstAttribute="bottom" secondItem="XYh-WQ-oyA" secondAttribute="bottom" id="R3G-jj-Sjg"/>
+                <constraint firstItem="VBN-zN-Inf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Reu-G0-T99"/>
                 <constraint firstItem="6jA-iU-oyc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bku-Bo-S7o"/>
+                <constraint firstItem="VBN-zN-Inf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="tad-vO-SL0"/>
                 <constraint firstItem="oIJ-BI-hyH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="u1x-ph-aPt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VBN-zN-Inf" secondAttribute="trailing" constant="12" id="wxf-ga-HG9"/>
                 <constraint firstAttribute="bottom" secondItem="6jA-iU-oyc" secondAttribute="bottom" id="wyZ-7G-PXk"/>
             </constraints>
             <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
@@ -123,6 +129,7 @@
     </objects>
     <resources>
         <image name="fondo3" width="1080" height="1920"/>
+        <image name="logo" width="945" height="358"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

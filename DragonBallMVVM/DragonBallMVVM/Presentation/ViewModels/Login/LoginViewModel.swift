@@ -13,6 +13,13 @@ final class LoginViewModel {
     // MARK: binding con UI
     var loginViewState: ((LoginSatatusLoad) -> Void)?
     
+    // MARK: UseCase
+    private let loginUseCase: LoginUseCaseProtocol
+    
+    // MARK: Init
+    init(loginUseCase: LoginUseCaseProtocol = LoginUseCase()) {
+        self.loginUseCase = loginUseCase
+    }
     
     func onLoginButton(email: String?, password: String?) {
         loginViewState?(.loading(true))
@@ -44,7 +51,32 @@ final class LoginViewModel {
     }
     
     private func doLoginWith(email: String, password: String) {
-        // TODO: Llamar al caso de uso
+        loginUseCase.login(user: email, password: password) { [weak self] token in
+            DispatchQueue.main.async {
+                self?.loginViewState?(.loaded)
+            }
+        } onError: { [weak self] networkError in
+            DispatchQueue.main.async {
+                var errorMessage = "Error Desconocido"
+                switch networkError {
+                case .malformeUrl:
+                    errorMessage = "malformeUrl"
+                case .dataFormating:
+                    errorMessage = "dataFormating"
+                case .noData:
+                    errorMessage = "noData"
+                case .errorCode(let error):
+                    errorMessage = "errorCode \(error?.description ?? "Unknown")"
+                case .tokenFormatError:
+                    errorMessage = "tokenFormatError"
+                case .decoding:
+                    errorMessage = "decoding"
+                case .other:
+                    errorMessage = "other"
+                }
+                self?.loginViewState?(.errorNetwor(errorMessage))
+            }
         }
+    }
 }
 

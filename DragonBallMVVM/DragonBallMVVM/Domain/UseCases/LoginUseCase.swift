@@ -7,7 +7,15 @@
 
 import Foundation
 
-final class LoginUseCase {
+
+protocol LoginUseCaseProtocol {
+    func login(user: String,
+               password: String,
+               onSuscces: @escaping (String?) -> Void,
+               onError: @escaping (NetworkError) -> Void)
+}
+
+final class LoginUseCase: LoginUseCaseProtocol {
     
     func login(user: String,
                password: String,
@@ -56,3 +64,4 @@ final class LoginUseCase {
         task.resume()
     }
 }
+

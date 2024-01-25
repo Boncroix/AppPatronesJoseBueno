@@ -41,7 +41,7 @@ final class LoginViewController: UIViewController {
     }
 }
 
-
+// MARK: - EXTENSION
 extension LoginViewController {
     private func setObservers() {
         viewModel.loginViewState = { [weak self] status in
@@ -59,11 +59,28 @@ extension LoginViewController {
             case .showErrorPassword(let error):
                 self?.errorPasswordLabel.text = error
                 self?.errorPasswordLabel.isHidden = (error == nil || error?.isEmpty == true)
+            case .errorNetwor(let errorMessage):
+                self?.loadingView.isHidden = true
+                self?.showAlert(message: errorMessage)
             }
         }
     }
+    
+    // MARK: - Navigate
     private func navigateToHome() {
         let nextVC = HomeTableViewController()
         navigationController?.setViewControllers([nextVC], animated: true)
+    }
+    
+    
+    // MARK: - Alert
+    private func showAlert(message: String) {
+        let alert = UIAlertController(
+            title: "ERROR NETWORK",
+            message: message,
+            preferredStyle: .alert
+        )
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
     }
 }

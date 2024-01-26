@@ -11,7 +11,7 @@ import Foundation
 final class LoginViewModel {
     
     // MARK: binding con UI
-    var loginViewState: ((LoginSatatusLoad) -> Void)?
+    var loginViewState: ((GenericSatatusLoad) -> Void)?
     
     // MARK: UseCase
     private let loginUseCase: LoginUseCaseProtocol
@@ -20,6 +20,7 @@ final class LoginViewModel {
     init(loginUseCase: LoginUseCaseProtocol = LoginUseCase()) {
         self.loginUseCase = loginUseCase
     }
+    
     func checkToken() {
         guard let token = UserDefaultsHelper.getToken() else {
             return
@@ -83,7 +84,7 @@ final class LoginViewModel {
                 case .encoding:
                     errorMessage = "encoding"
                 }
-                self?.loginViewState?(.errorNetwor(errorMessage))
+                self?.loginViewState?(.errorNetwork(errorMessage))
             }
         }
     }

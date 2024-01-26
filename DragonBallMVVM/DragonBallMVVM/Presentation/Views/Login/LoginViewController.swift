@@ -16,6 +16,7 @@ final class LoginViewController: UIViewController {
     @IBOutlet weak var errorPasswordLabel: UILabel!
     @IBOutlet weak var loadingView: UIView!
     
+    // MARK: - ViewModel
     private var viewModel: LoginViewModel
     
     // MARK: - Inits
@@ -60,7 +61,7 @@ extension LoginViewController {
             case .showErrorPassword(let error):
                 self?.errorPasswordLabel.text = error
                 self?.errorPasswordLabel.isHidden = (error == nil || error?.isEmpty == true)
-            case .errorNetwor(let errorMessage):
+            case .errorNetwork(let errorMessage):
                 self?.loadingView.isHidden = true
                 self?.showAlert(message: errorMessage)
             }
@@ -69,7 +70,7 @@ extension LoginViewController {
     
     // MARK: - Navigate
     private func navigateToHome() {
-        let nextVC = HomeTableViewController()
+        let nextVC = HomeCollectionViewController()
         navigationController?.setViewControllers([nextVC], animated: true)
     }
     

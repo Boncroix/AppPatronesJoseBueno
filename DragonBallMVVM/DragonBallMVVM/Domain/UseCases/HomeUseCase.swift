@@ -2,13 +2,13 @@
 //  HomeUseCase.swift
 //  DragonBallMVVM
 //
-//  Created by Jose Bueno Cruz on 25/1/24.
+//  Created by Jose Bueno Cruz on 26/1/24.
 //
 
 import Foundation
 
 protocol HomeUseCaseProtocol {
-    func getHeros(onSuccess: @escaping ([HeroModel]) -> Void,
+    func getHeros(onSuccess: @escaping ([ModelDragonBall]) -> Void,
                   onError: @escaping (NetworkError) -> Void)
 }
 
@@ -20,7 +20,7 @@ final class HomeUseCase: HomeUseCaseProtocol {
         self.client = client
     }
     
-    func getHeros(onSuccess: @escaping ([HeroModel]) -> Void,
+    func getHeros(onSuccess: @escaping ([ModelDragonBall]) -> Void,
                   onError: @escaping (NetworkError) -> Void) {
         
         guard let url = URL(string: "\(EndPoints.url.rawValue)\(EndPoints.allHeros.rawValue)") else {
@@ -44,7 +44,7 @@ final class HomeUseCase: HomeUseCaseProtocol {
         let heroRequest = HeroRequest(name: "")
         urlRequest.httpBody = try? JSONEncoder().encode(heroRequest)
         
-        client.request(urlRequest, using: [HeroModel].self) { result in
+        client.request(urlRequest, using: [ModelDragonBall].self) { result in
             switch result {
             case let .success(dataHeroes):
                 onSuccess(dataHeroes)
@@ -59,11 +59,11 @@ final class HomeUseCase: HomeUseCaseProtocol {
 
 // MARK: - Fake Success
 final class HomeUseCaseFakeSuccess: HomeUseCaseProtocol {
-    func getHeros(onSuccess: @escaping ([HeroModel]) -> Void, onError: @escaping (NetworkError) -> Void) {
+    func getHeros(onSuccess: @escaping ([ModelDragonBall]) -> Void, onError: @escaping (NetworkError) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            let heroes = [HeroModel(id: "1", name: "Aitor", description: "Superman", photo: "", favorite: true),
-            HeroModel(id: "2", name: "José", description: "Spiderman", photo: "", favorite: false),
-            HeroModel(id: "3", name: "Dolores", description: "Cat Woman", photo: "", favorite: true)]
+            let heroes = [ModelDragonBall(id: "1", name: "Aitor", description: "Superman", photo: "", favorite: true),
+                          ModelDragonBall(id: "2", name: "José", description: "Spiderman", photo: "", favorite: false),
+                          ModelDragonBall(id: "3", name: "Dolores", description: "Cat Woman", photo: "", favorite: true)]
             
             onSuccess(heroes)
         }
@@ -72,9 +72,10 @@ final class HomeUseCaseFakeSuccess: HomeUseCaseProtocol {
 
 // MARK: - Fake Error
 final class HomeUseCaseFakeError: HomeUseCaseProtocol {
-    func getHeros(onSuccess: @escaping ([HeroModel]) -> Void, onError: @escaping (NetworkError) -> Void) {
+    func getHeros(onSuccess: @escaping ([ModelDragonBall]) -> Void, onError: @escaping (NetworkError) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             onError(.noData)
         }
     }
 }
+

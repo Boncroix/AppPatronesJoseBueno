@@ -1,13 +1,13 @@
 //
-//  HeroModel.swift
+//  ModelDragonBall.swift
 //  DragonBallMVVM
 //
-//  Created by Jose Bueno Cruz on 25/1/24.
+//  Created by Jose Bueno Cruz on 26/1/24.
 //
 
 import Foundation
 
-struct HeroModel: Codable {
+struct ModelDragonBall: Codable, Hashable {
     let id: String
     let name: String
     let description: String

@@ -27,11 +27,14 @@ final class HomeUseCase: HomeUseCaseProtocol {
             onError(.malformeUrl)
             return
         }
+        guard let token = UserDefaultsHelper.getToken() else {
+            onError(.tokenFormatError)
+            return
+        }
         
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = HTTPMethods.post
-        // TODO: - Obtener el token de algún sitio
-        urlRequest.setValue("Bearer \("token")", forHTTPHeaderField: "Authorization")
+        urlRequest.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         urlRequest.setValue(HTTPMethods.contenType, forHTTPHeaderField: "Content-Type")
         
         struct HeroRequest: Codable {

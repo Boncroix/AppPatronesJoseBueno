@@ -20,6 +20,14 @@ final class LoginViewModel {
     init(loginUseCase: LoginUseCaseProtocol = LoginUseCase()) {
         self.loginUseCase = loginUseCase
     }
+    func checkToken() {
+        guard let token = UserDefaultsHelper.getToken() else {
+            return
+        }
+        DispatchQueue.main.async {
+            self.loginViewState?(.loaded)
+        }
+    }
     
     func onLoginButton(email: String?, password: String?) {
         loginViewState?(.loading(true))
@@ -37,7 +45,6 @@ final class LoginViewModel {
         }
         
         doLoginWith(email: email, password: password)
-        
     }
     
     // Check email

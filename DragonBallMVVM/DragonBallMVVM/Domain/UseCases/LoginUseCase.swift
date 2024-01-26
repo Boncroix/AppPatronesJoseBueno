@@ -17,20 +17,6 @@ protocol LoginUseCaseProtocol {
 
 final class LoginUseCase: LoginUseCaseProtocol {
     
-    private var token: String? {
-        get {
-            if let token = LocalDataModel.getToken(){
-                return token
-            }
-            return nil
-        }
-        set {
-            if let token = newValue {
-                LocalDataModel.save(token: token)
-            }
-        }
-    }
-    
     private let client: APIClientProtocol
     
     init(client: APIClientProtocol = APIClient()) {
@@ -58,10 +44,10 @@ final class LoginUseCase: LoginUseCaseProtocol {
         urlRequest.httpMethod = HTTPMethods.post
         urlRequest.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
         
-        client.jwt(urlRequest) { [weak self] result in
+        client.jwt(urlRequest) { result in
             switch result {
             case let .success(token):
-                self?.token = token
+                UserDefaultsHelper.save(token: token)
                 onSuscces(token)
             case let .failure(error):
                 onError(error)

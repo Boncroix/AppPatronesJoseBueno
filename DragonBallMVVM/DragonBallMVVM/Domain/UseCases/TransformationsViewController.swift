@@ -43,7 +43,9 @@ final class TransformationsViewController: UIViewController {
 // MARK: - Delegate
 extension TransformationsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO: - Navegar al detaller de la transformación
+        let transformation = transformations[indexPath.row]
+        let nextVC = DetailViewController(hero: transformation)
+        navigationController?.pushViewController(nextVC, animated: true)
     }
     func tableView(
         _ tableView: UITableView,

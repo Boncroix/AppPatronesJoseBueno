@@ -79,11 +79,7 @@ class DetailViewController: UIViewController {
     }
     
     func checkTransformations() {
-        if transformationsViewModel.dataTransformations.isEmpty {
-            heroTransformationsButton.isHidden = true
-        } else {
-            heroTransformationsButton.isHidden = false
-        }
+        heroTransformationsButton.isHidden = transformationsViewModel.dataTransformations.isEmpty
     }
 }
 

@@ -46,10 +46,7 @@ class HomeCollectionViewController: UIViewController {
             case .loading(_):
                 print("Home Loading")
             case .loaded:
-                DispatchQueue.main.async {
-                    self?.setUpCollectionView()
-                }
-                
+                self?.setUpCollectionView()
             case .errorNetwork(let error):
                 print(error)
             default: break
@@ -62,7 +59,8 @@ class HomeCollectionViewController: UIViewController {
 //MARK: - Extension Delegate
 extension HomeCollectionViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let nextVC = DetailViewController()
+        let hero = homeViewModel.dataHeroes[indexPath.row]
+        let nextVC = DetailViewController(hero: hero)
         navigationController?.pushViewController(nextVC, animated: true)
     }
 }
@@ -103,11 +101,14 @@ extension HomeCollectionViewController {
         }
         
         collectionView.dataSource = dataSource
-        var custonListHeroesData = self.homeViewModel.dataHeroes
-        custonListHeroesData.removeAll { $0.name == "Quake (Daisy Johnson)"}
-        var snapshot = Snapshot()
-        snapshot.appendSections([0])
-        snapshot.appendItems(custonListHeroesData)
-        self.dataSource?.apply(snapshot)
+        DispatchQueue.main.async {
+            var custonListHeroesData = self.homeViewModel.dataHeroes
+            custonListHeroesData.removeAll { $0.name == "Quake (Daisy Johnson)"}
+            var snapshot = Snapshot()
+            snapshot.appendSections([0])
+            snapshot.appendItems(custonListHeroesData)
+            self.dataSource?.apply(snapshot)
+        }
+
     }
 }

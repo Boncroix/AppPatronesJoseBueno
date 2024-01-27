@@ -19,11 +19,11 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo3" translatesAutoresizingMaskIntoConstraints="NO" id="2gL-Ph-e1s">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo3" translatesAutoresizingMaskIntoConstraints="NO" id="2gL-Ph-e1s">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                 </imageView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Fmd-2h-hXL">
-                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cQM-jL-6gt">
                         <size key="itemSize" width="128" height="128"/>
@@ -39,11 +39,11 @@
                 <constraint firstItem="Fmd-2h-hXL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1xx-Df-JHz"/>
                 <constraint firstAttribute="bottom" secondItem="2gL-Ph-e1s" secondAttribute="bottom" id="7As-0I-3oy"/>
                 <constraint firstItem="2gL-Ph-e1s" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EpB-va-rQX"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Fmd-2h-hXL" secondAttribute="trailing" id="MTV-t8-b46"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Fmd-2h-hXL" secondAttribute="bottom" id="fbD-Rb-YK8"/>
+                <constraint firstAttribute="trailing" secondItem="Fmd-2h-hXL" secondAttribute="trailing" id="MTV-t8-b46"/>
+                <constraint firstAttribute="bottom" secondItem="Fmd-2h-hXL" secondAttribute="bottom" id="fbD-Rb-YK8"/>
                 <constraint firstItem="2gL-Ph-e1s" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gJ5-m6-Ax2"/>
                 <constraint firstItem="2gL-Ph-e1s" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="v8c-nC-2HL"/>
-                <constraint firstItem="Fmd-2h-hXL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xfO-2H-KUv"/>
+                <constraint firstItem="Fmd-2h-hXL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xfO-2H-KUv"/>
             </constraints>
             <point key="canvasLocation" x="122.90076335877862" y="-11.267605633802818"/>
         </view>

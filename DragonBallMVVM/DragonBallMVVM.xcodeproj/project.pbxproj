@@ -71,6 +71,8 @@
 		42DC882E2B6449ED00250F82 /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC882D2B6449ED00250F82 /* HomeUseCase.swift */; };
 		42DC88322B644B8400250F82 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88302B644B8400250F82 /* DetailViewController.swift */; };
 		42DC88332B644B8400250F82 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC88312B644B8400250F82 /* DetailViewController.xib */; };
+		42DC88382B6450B200250F82 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88372B6450B200250F82 /* DetailViewModel.swift */; };
+		42DC883A2B64E11100250F82 /* HeroesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88392B64E11100250F82 /* HeroesUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +127,8 @@
 		42DC882D2B6449ED00250F82 /* HomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCase.swift; sourceTree = "<group>"; };
 		42DC88302B644B8400250F82 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		42DC88312B644B8400250F82 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		42DC88372B6450B200250F82 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = SOURCE_ROOT; };
+		42DC88392B64E11100250F82 /* HeroesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +240,8 @@
 		42DC879C2B61450F00250F82 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				42DC88362B64509C00250F82 /* Detail */,
+				42DC88352B644FE500250F82 /* Home */,
 				42DC87BE2B618B4B00250F82 /* Login */,
 			);
 			path = ViewModels;
@@ -256,6 +262,7 @@
 			children = (
 				42DC87D82B61A68500250F82 /* LoginUseCase.swift */,
 				42DC882D2B6449ED00250F82 /* HomeUseCase.swift */,
+				42DC88392B64E11100250F82 /* HeroesUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -307,7 +314,6 @@
 			isa = PBXGroup;
 			children = (
 				42DC87BF2B618B5E00250F82 /* LoginViewModel.swift */,
-				42DC880D2B63F19400250F82 /* HomeViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -315,8 +321,7 @@
 		42DC87C72B61931200250F82 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				42DC88152B6407ED00250F82 /* HeroCollectionViewCell.swift */,
-				42DC88162B6407ED00250F82 /* HeroCollectionViewCell.xib */,
+				42DC88342B644FA200250F82 /* Celdas Custom */,
 				42DC88292B643C4400250F82 /* HomeCollectionViewController.swift */,
 				42DC882A2B643C4400250F82 /* HomeCollectionViewController.xib */,
 			);
@@ -348,6 +353,31 @@
 			children = (
 				42DC88302B644B8400250F82 /* DetailViewController.swift */,
 				42DC88312B644B8400250F82 /* DetailViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		42DC88342B644FA200250F82 /* Celdas Custom */ = {
+			isa = PBXGroup;
+			children = (
+				42DC88152B6407ED00250F82 /* HeroCollectionViewCell.swift */,
+				42DC88162B6407ED00250F82 /* HeroCollectionViewCell.xib */,
+			);
+			path = "Celdas Custom";
+			sourceTree = "<group>";
+		};
+		42DC88352B644FE500250F82 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				42DC880D2B63F19400250F82 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		42DC88362B64509C00250F82 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				42DC88372B6450B200250F82 /* DetailViewModel.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -495,10 +525,12 @@
 				42DC87FD2B62EDE000250F82 /* APIClient.swift in Sources */,
 				42DC87E62B61A83C00250F82 /* HTTPMethods.swift in Sources */,
 				42DC87C02B618B5E00250F82 /* LoginViewModel.swift in Sources */,
+				42DC883A2B64E11100250F82 /* HeroesUseCase.swift in Sources */,
 				42DC87C42B618D5E00250F82 /* GenericSatatusLoad.swift in Sources */,
 				42DC88322B644B8400250F82 /* DetailViewController.swift in Sources */,
 				42DC87B82B6185EA00250F82 /* LoginViewController.swift in Sources */,
 				42DC880A2B638C6E00250F82 /* UIViewController.swift in Sources */,
+				42DC88382B6450B200250F82 /* DetailViewModel.swift in Sources */,
 				42DC88012B62F6AD00250F82 /* LocalDataModel.swift in Sources */,
 				42DC88052B637F9E00250F82 /* UserDefaultsHelper.swift in Sources */,
 				42DC87D92B61A68500250F82 /* LoginUseCase.swift in Sources */,

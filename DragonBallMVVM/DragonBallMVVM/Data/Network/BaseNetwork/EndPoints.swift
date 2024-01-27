@@ -11,4 +11,5 @@ enum EndPoints: String {
     case url = "https://dragonball.Keepcoding.education/api"
     case login = "/auth/login"
     case allHeros = "/heros/all"
+    case transformationsHeros = "/heros/tranformations"
 }

@@ -61,6 +61,9 @@
                     <buttonConfiguration key="configuration" style="filled" title="TRANSFORMATIONS" cornerStyle="capsule">
                         <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="didTapTransformationsButton:" destination="-1" eventType="touchUpInside" id="Cti-Q9-ofI"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

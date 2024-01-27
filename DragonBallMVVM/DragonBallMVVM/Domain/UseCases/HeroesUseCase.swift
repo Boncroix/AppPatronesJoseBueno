@@ -14,8 +14,10 @@ protocol HeroesUseCaseProtocol {
 
 final class HeroesUseCase: HeroesUseCaseProtocol {
     
+    // MARK: - Client
     private let client: APIClientProtocol
     
+    // MARK: - Inits
     init(client: APIClientProtocol = APIClient()) {
         self.client = client
     }
@@ -61,9 +63,9 @@ final class HeroesUseCase: HeroesUseCaseProtocol {
 final class HeroesUseCaseFakeSuccess: HeroesUseCaseProtocol {
     func getHeros(onSuccess: @escaping ([ModelDragonBall]) -> Void, onError: @escaping (NetworkError) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            let heroes = [ModelDragonBall(id: "1", name: "Aitor", description: "Superman", photo: "", favorite: true),
-                          ModelDragonBall(id: "2", name: "José", description: "Spiderman", photo: "", favorite: false),
-                          ModelDragonBall(id: "3", name: "Dolores", description: "Cat Woman", photo: "", favorite: true)]
+            let heroes = [ModelDragonBall(id: "1", name: "Aitor", description: "Superman", photo: ""),
+                          ModelDragonBall(id: "2", name: "José", description: "Spiderman", photo: ""),
+                          ModelDragonBall(id: "3", name: "Dolores", description: "Cat Woman", photo: "")]
             
             onSuccess(heroes)
         }

@@ -21,15 +21,6 @@ final class LoginViewModel {
         self.loginUseCase = loginUseCase
     }
     
-    func checkToken() {
-        guard UserDefaultsHelper.getToken() != nil else {
-            return
-        }
-        DispatchQueue.main.async {
-            self.loginViewState?(.loaded)
-        }
-    }
-    
     func onLoginButton(email: String?, password: String?) {
         loginViewState?(.loading(true))
         

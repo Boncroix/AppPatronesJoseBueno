@@ -45,7 +45,6 @@ final class LoginViewController: UIViewController {
 // MARK: - EXTENSION
 extension LoginViewController {
     private func setObservers() {
-        viewModel.checkToken()
         viewModel.loginViewState = { [weak self] status in
             switch status {
             case .loading(let isLoading):

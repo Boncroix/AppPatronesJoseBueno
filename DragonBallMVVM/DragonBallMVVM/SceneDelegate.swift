@@ -15,8 +15,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene:  scene)
-        let loginVC = LoginViewController()
-        let navigationController = UINavigationController(rootViewController: loginVC)
+        let navigationController = UINavigationController()
+        
+        if UserDefaultsHelper.getToken() != nil {
+            let heroesVC = HeroesCollectionViewController()
+            navigationController.setViewControllers([heroesVC], animated: true)
+        } else {
+            let loginVC = LoginViewController()
+            navigationController.setViewControllers([loginVC], animated: true)
+        }
+        
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
         self.window = window

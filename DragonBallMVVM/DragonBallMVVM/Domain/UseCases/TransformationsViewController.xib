@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransformationsViewController" customModule="DragonBallMVVM" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="slt-I4-QEz" id="7Li-3d-aKv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo3" translatesAutoresizingMaskIntoConstraints="NO" id="uSQ-d7-1Ja">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="slt-I4-QEz">
+                    <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" red="0.60073786969999998" green="0.78558737040000004" blue="0.95744639639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="slt-I4-QEz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7xc-60-G45"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="slt-I4-QEz" secondAttribute="trailing" id="Jx0-8l-Tka"/>
+                <constraint firstItem="slt-I4-QEz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="KUW-Io-HdG"/>
+                <constraint firstItem="uSQ-d7-1Ja" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Lod-IX-dKi"/>
+                <constraint firstItem="uSQ-d7-1Ja" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="U94-Lz-VJr"/>
+                <constraint firstAttribute="bottom" secondItem="slt-I4-QEz" secondAttribute="bottom" id="l14-l1-imQ"/>
+                <constraint firstItem="uSQ-d7-1Ja" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lHD-3J-2RI"/>
+                <constraint firstAttribute="bottom" secondItem="uSQ-d7-1Ja" secondAttribute="bottom" id="mDm-hI-0Nn"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fondo3" width="1080" height="1920"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

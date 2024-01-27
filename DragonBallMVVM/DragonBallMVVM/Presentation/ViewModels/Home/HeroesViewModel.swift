@@ -1,5 +1,5 @@
 //
-//  HomeViewModel.swift
+//  HeroesViewModel.swift
 //  DragonBallMVVM
 //
 //  Created by Jose Bueno Cruz on 26/1/24.
@@ -7,29 +7,29 @@
 
 import Foundation
 
-final class HomeViewModel {
+final class HeroesViewModel {
     
     // MARK: - Binding con UI
-    var homeStatusLoad: ((GenericSatatusLoad) -> Void)?
+    var heroesStatusLoad: ((GenericSatatusLoad) -> Void)?
     
     // MARK: - CaseUse
-    let homeUseCase: HomeUseCaseProtocol
+    let heroesUseCase: HeroesUseCaseProtocol
     
     // MARK: - Model
     var dataHeroes: [ModelDragonBall] = []
     
     // MARK: - Inits
-    init(homeUseCase: HomeUseCaseProtocol = HomeUseCase()) {
-        self.homeUseCase = homeUseCase
+    init(heroesUseCase: HeroesUseCaseProtocol = HeroesUseCase()) {
+        self.heroesUseCase = heroesUseCase
     }
     
     func loadHeros() {
-        homeStatusLoad?(.loading(true))
+        heroesStatusLoad?(.loading(true))
         
-        homeUseCase.getHeros { [weak self] heroes in
+        heroesUseCase.getHeros { [weak self] heroes in
             DispatchQueue.main.async {
                 self?.dataHeroes = heroes
-                self?.homeStatusLoad?(.loaded)
+                self?.heroesStatusLoad?(.loaded)
             }
         } onError: { [weak self] networkError in
             DispatchQueue.main.async {
@@ -52,7 +52,7 @@ final class HomeViewModel {
                 case .encoding:
                     errorMessage = "encoding"
                 }
-                self?.homeStatusLoad?(.errorNetwork(errorMessage))
+                self?.heroesStatusLoad?(.errorNetwork(errorMessage))
             }
         }
     }

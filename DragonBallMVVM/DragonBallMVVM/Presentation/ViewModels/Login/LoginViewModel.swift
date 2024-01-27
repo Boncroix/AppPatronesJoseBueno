@@ -22,7 +22,7 @@ final class LoginViewModel {
     }
     
     func checkToken() {
-        guard let token = UserDefaultsHelper.getToken() else {
+        guard UserDefaultsHelper.getToken() != nil else {
             return
         }
         DispatchQueue.main.async {

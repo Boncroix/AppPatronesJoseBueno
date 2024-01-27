@@ -1,5 +1,5 @@
 //
-//  HomeCollectionViewController.swift
+//  HeroesCollectionViewController.swift
 //  DragonBallMVVM
 //
 //  Created by Jose Bueno Cruz on 26/1/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeCollectionViewController: UIViewController {
+class HeroesCollectionViewController: UIViewController {
     
     // MARK: - Typealias
     typealias DataSource = UICollectionViewDiffableDataSource<Int, ModelDragonBall>
@@ -17,12 +17,12 @@ class HomeCollectionViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - Model
-    private var homeViewModel: HomeViewModel
+    private var heroesViewModel: HeroesViewModel
     private var dataSource: DataSource?
     
     // MARK: - Inits
-    init(homeViewModel: HomeViewModel = HomeViewModel()) {
-        self.homeViewModel = homeViewModel
+    init(heroesViewModel: HeroesViewModel = HeroesViewModel()) {
+        self.heroesViewModel = heroesViewModel
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -35,16 +35,16 @@ class HomeCollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBarWithLogout()
-        homeViewModel.loadHeros()
+        heroesViewModel.loadHeros()
         setObservers()
         collectionView.delegate = self
     }
     
     private func setObservers() {
-        homeViewModel.homeStatusLoad = { [weak self] status in
+        heroesViewModel.heroesStatusLoad = { [weak self] status in
             switch status {
             case .loading(_):
-                print("Home Loading")
+                print("Heroes Loading")
             case .loaded:
                 self?.setUpCollectionView()
             case .errorNetwork(let error):
@@ -57,16 +57,16 @@ class HomeCollectionViewController: UIViewController {
 
 
 //MARK: - Extension Delegate
-extension HomeCollectionViewController: UICollectionViewDelegate {
+extension HeroesCollectionViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let hero = homeViewModel.dataHeroes[indexPath.row]
+        let hero = heroesViewModel.dataHeroes[indexPath.row]
         let nextVC = DetailViewController(hero: hero)
         navigationController?.pushViewController(nextVC, animated: true)
     }
 }
 
 // MARK: - setUp CollectionView
-extension HomeCollectionViewController {
+extension HeroesCollectionViewController {
     func setUpCollectionView() {
         let layout = UICollectionViewFlowLayout()
         let screenWidth = UIScreen.main.bounds.width
@@ -102,7 +102,7 @@ extension HomeCollectionViewController {
         
         collectionView.dataSource = dataSource
         DispatchQueue.main.async {
-            var custonListHeroesData = self.homeViewModel.dataHeroes
+            var custonListHeroesData = self.heroesViewModel.dataHeroes
             custonListHeroesData.removeAll { $0.name == "Quake (Daisy Johnson)"}
             var snapshot = Snapshot()
             snapshot.appendSections([0])

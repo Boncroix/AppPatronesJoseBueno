@@ -12,7 +12,7 @@ protocol HeroesUseCaseProtocol {
                   onError: @escaping (NetworkError) -> Void)
 }
 
-final class HeroesUseCase: HomeUseCaseProtocol {
+final class HeroesUseCase: HeroesUseCaseProtocol {
     
     private let client: APIClientProtocol
     
@@ -58,7 +58,7 @@ final class HeroesUseCase: HomeUseCaseProtocol {
 
 
 // MARK: - Fake Success
-final class HeroesUseCaseFakeSuccess: HomeUseCaseProtocol {
+final class HeroesUseCaseFakeSuccess: HeroesUseCaseProtocol {
     func getHeros(onSuccess: @escaping ([ModelDragonBall]) -> Void, onError: @escaping (NetworkError) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             let heroes = [ModelDragonBall(id: "1", name: "Aitor", description: "Superman", photo: "", favorite: true),
@@ -71,7 +71,7 @@ final class HeroesUseCaseFakeSuccess: HomeUseCaseProtocol {
 }
 
 // MARK: - Fake Error
-final class HeroesUseCaseFakeError: HomeUseCaseProtocol {
+final class HeroesUseCaseFakeError: HeroesUseCaseProtocol {
     func getHeros(onSuccess: @escaping ([ModelDragonBall]) -> Void, onError: @escaping (NetworkError) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             onError(.noData)

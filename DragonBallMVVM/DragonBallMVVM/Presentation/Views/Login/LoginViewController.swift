@@ -54,7 +54,7 @@ extension LoginViewController {
                 self?.errorPasswordLabel.isHidden = true
             case .loaded:
                 self?.loadingView.isHidden = true
-                self?.navigateToHome()
+                self?.navigateToHeroes()
             case .showErrorEmail(let error):
                 self?.errorEmailLabel.text = error
                 self?.errorEmailLabel.isHidden = (error == nil || error?.isEmpty == true)
@@ -69,8 +69,8 @@ extension LoginViewController {
     }
     
     // MARK: - Navigate
-    private func navigateToHome() {
-        let nextVC = HomeCollectionViewController()
+    private func navigateToHeroes() {
+        let nextVC = HeroesCollectionViewController()
         navigationController?.setViewControllers([nextVC], animated: true)
     }
     

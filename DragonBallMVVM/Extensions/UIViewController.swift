@@ -19,7 +19,7 @@ extension UIViewController {
     
 
     @objc func logoutTapped() {
-        LocalDataModel.deleteToken()
+        UserDefaultsHelper.deleteToken()
         let loginViewController = LoginViewController()
         self.navigationController?.setViewControllers(
             [loginViewController], animated: true)

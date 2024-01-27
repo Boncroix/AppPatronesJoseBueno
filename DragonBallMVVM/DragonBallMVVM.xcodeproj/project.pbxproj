@@ -44,18 +44,15 @@
 		42DC87FD2B62EDE000250F82 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87FC2B62EDE000250F82 /* APIClient.swift */; };
 		42DC87FE2B62EDE000250F82 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87FC2B62EDE000250F82 /* APIClient.swift */; };
 		42DC87FF2B62EDE000250F82 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87FC2B62EDE000250F82 /* APIClient.swift */; };
-		42DC88012B62F6AD00250F82 /* LocalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88002B62F6AD00250F82 /* LocalDataModel.swift */; };
-		42DC88022B62F6AD00250F82 /* LocalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88002B62F6AD00250F82 /* LocalDataModel.swift */; };
-		42DC88032B62F6AD00250F82 /* LocalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88002B62F6AD00250F82 /* LocalDataModel.swift */; };
 		42DC88052B637F9E00250F82 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88042B637F9E00250F82 /* UserDefaultsHelper.swift */; };
 		42DC88062B637F9E00250F82 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88042B637F9E00250F82 /* UserDefaultsHelper.swift */; };
 		42DC88072B637F9E00250F82 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88042B637F9E00250F82 /* UserDefaultsHelper.swift */; };
 		42DC880A2B638C6E00250F82 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88092B638C6E00250F82 /* UIViewController.swift */; };
 		42DC880B2B638C6E00250F82 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88092B638C6E00250F82 /* UIViewController.swift */; };
 		42DC880C2B638C6E00250F82 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88092B638C6E00250F82 /* UIViewController.swift */; };
-		42DC880E2B63F19500250F82 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC880D2B63F19400250F82 /* HomeViewModel.swift */; };
-		42DC880F2B63F19500250F82 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC880D2B63F19400250F82 /* HomeViewModel.swift */; };
-		42DC88102B63F19500250F82 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC880D2B63F19400250F82 /* HomeViewModel.swift */; };
+		42DC880E2B63F19500250F82 /* HeroesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC880D2B63F19400250F82 /* HeroesViewModel.swift */; };
+		42DC880F2B63F19500250F82 /* HeroesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC880D2B63F19400250F82 /* HeroesViewModel.swift */; };
+		42DC88102B63F19500250F82 /* HeroesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC880D2B63F19400250F82 /* HeroesViewModel.swift */; };
 		42DC88172B6407ED00250F82 /* HeroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88152B6407ED00250F82 /* HeroCollectionViewCell.swift */; };
 		42DC88182B6407ED00250F82 /* HeroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88152B6407ED00250F82 /* HeroCollectionViewCell.swift */; };
 		42DC88192B6407ED00250F82 /* HeroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88152B6407ED00250F82 /* HeroCollectionViewCell.swift */; };
@@ -66,9 +63,8 @@
 		42DC881F2B6409E200250F82 /* UiimageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC881D2B6409E100250F82 /* UiimageView.swift */; };
 		42DC88202B6409E200250F82 /* UiimageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC881D2B6409E100250F82 /* UiimageView.swift */; };
 		42DC88242B642F1000250F82 /* ModelDragonBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88232B642F1000250F82 /* ModelDragonBall.swift */; };
-		42DC882B2B643C4400250F82 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88292B643C4400250F82 /* HomeCollectionViewController.swift */; };
-		42DC882C2B643C4400250F82 /* HomeCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC882A2B643C4400250F82 /* HomeCollectionViewController.xib */; };
-		42DC882E2B6449ED00250F82 /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC882D2B6449ED00250F82 /* HomeUseCase.swift */; };
+		42DC882B2B643C4400250F82 /* HeroesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88292B643C4400250F82 /* HeroesCollectionViewController.swift */; };
+		42DC882C2B643C4400250F82 /* HeroesCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC882A2B643C4400250F82 /* HeroesCollectionViewController.xib */; };
 		42DC88322B644B8400250F82 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88302B644B8400250F82 /* DetailViewController.swift */; };
 		42DC88332B644B8400250F82 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC88312B644B8400250F82 /* DetailViewController.xib */; };
 		42DC88382B6450B200250F82 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88372B6450B200250F82 /* DetailViewModel.swift */; };
@@ -114,17 +110,15 @@
 		42DC87E52B61A83C00250F82 /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
 		42DC87E92B61A8A800250F82 /* HTTPResponseCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseCodes.swift; sourceTree = "<group>"; };
 		42DC87FC2B62EDE000250F82 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		42DC88002B62F6AD00250F82 /* LocalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataModel.swift; sourceTree = "<group>"; };
 		42DC88042B637F9E00250F82 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		42DC88092B638C6E00250F82 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
-		42DC880D2B63F19400250F82 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		42DC880D2B63F19400250F82 /* HeroesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesViewModel.swift; sourceTree = "<group>"; };
 		42DC88152B6407ED00250F82 /* HeroCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCollectionViewCell.swift; sourceTree = "<group>"; };
 		42DC88162B6407ED00250F82 /* HeroCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroCollectionViewCell.xib; sourceTree = "<group>"; };
 		42DC881D2B6409E100250F82 /* UiimageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiimageView.swift; sourceTree = "<group>"; };
 		42DC88232B642F1000250F82 /* ModelDragonBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDragonBall.swift; sourceTree = "<group>"; };
-		42DC88292B643C4400250F82 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
-		42DC882A2B643C4400250F82 /* HomeCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewController.xib; sourceTree = "<group>"; };
-		42DC882D2B6449ED00250F82 /* HomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCase.swift; sourceTree = "<group>"; };
+		42DC88292B643C4400250F82 /* HeroesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCollectionViewController.swift; sourceTree = "<group>"; };
+		42DC882A2B643C4400250F82 /* HeroesCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroesCollectionViewController.xib; sourceTree = "<group>"; };
 		42DC88302B644B8400250F82 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		42DC88312B644B8400250F82 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		42DC88372B6450B200250F82 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = SOURCE_ROOT; };
@@ -251,7 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				42DC882F2B644B7300250F82 /* Detail */,
-				42DC87C72B61931200250F82 /* Home */,
+				42DC87C72B61931200250F82 /* Heroes */,
 				42DC87A32B6145C300250F82 /* Login */,
 			);
 			path = Views;
@@ -261,7 +255,6 @@
 			isa = PBXGroup;
 			children = (
 				42DC87D82B61A68500250F82 /* LoginUseCase.swift */,
-				42DC882D2B6449ED00250F82 /* HomeUseCase.swift */,
 				42DC88392B64E11100250F82 /* HeroesUseCase.swift */,
 			);
 			path = UseCases;
@@ -279,7 +272,6 @@
 		42DC87A02B61453D00250F82 /* Local */ = {
 			isa = PBXGroup;
 			children = (
-				42DC88002B62F6AD00250F82 /* LocalDataModel.swift */,
 				42DC88042B637F9E00250F82 /* UserDefaultsHelper.swift */,
 			);
 			path = Local;
@@ -318,14 +310,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		42DC87C72B61931200250F82 /* Home */ = {
+		42DC87C72B61931200250F82 /* Heroes */ = {
 			isa = PBXGroup;
 			children = (
-				42DC88342B644FA200250F82 /* Celdas Custom */,
-				42DC88292B643C4400250F82 /* HomeCollectionViewController.swift */,
-				42DC882A2B643C4400250F82 /* HomeCollectionViewController.xib */,
+				42DC88342B644FA200250F82 /* Celda Custom Heroes */,
+				42DC88292B643C4400250F82 /* HeroesCollectionViewController.swift */,
+				42DC882A2B643C4400250F82 /* HeroesCollectionViewController.xib */,
 			);
-			path = Home;
+			path = Heroes;
 			sourceTree = "<group>";
 		};
 		42DC87DC2B61A73E00250F82 /* BaseNetwork */ = {
@@ -357,19 +349,19 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
-		42DC88342B644FA200250F82 /* Celdas Custom */ = {
+		42DC88342B644FA200250F82 /* Celda Custom Heroes */ = {
 			isa = PBXGroup;
 			children = (
 				42DC88152B6407ED00250F82 /* HeroCollectionViewCell.swift */,
 				42DC88162B6407ED00250F82 /* HeroCollectionViewCell.xib */,
 			);
-			path = "Celdas Custom";
+			path = "Celda Custom Heroes";
 			sourceTree = "<group>";
 		};
 		42DC88352B644FE500250F82 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				42DC880D2B63F19400250F82 /* HomeViewModel.swift */,
+				42DC880D2B63F19400250F82 /* HeroesViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -490,7 +482,7 @@
 				42DC88332B644B8400250F82 /* DetailViewController.xib in Resources */,
 				42DC87732B60EA1800250F82 /* Assets.xcassets in Resources */,
 				42DC881A2B6407ED00250F82 /* HeroCollectionViewCell.xib in Resources */,
-				42DC882C2B643C4400250F82 /* HomeCollectionViewController.xib in Resources */,
+				42DC882C2B643C4400250F82 /* HeroesCollectionViewController.xib in Resources */,
 				42DC87BB2B6185EA00250F82 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,7 +513,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42DC87EA2B61A8A800250F82 /* HTTPResponseCodes.swift in Sources */,
-				42DC880E2B63F19500250F82 /* HomeViewModel.swift in Sources */,
+				42DC880E2B63F19500250F82 /* HeroesViewModel.swift in Sources */,
 				42DC87FD2B62EDE000250F82 /* APIClient.swift in Sources */,
 				42DC87E62B61A83C00250F82 /* HTTPMethods.swift in Sources */,
 				42DC87C02B618B5E00250F82 /* LoginViewModel.swift in Sources */,
@@ -531,16 +523,14 @@
 				42DC87B82B6185EA00250F82 /* LoginViewController.swift in Sources */,
 				42DC880A2B638C6E00250F82 /* UIViewController.swift in Sources */,
 				42DC88382B6450B200250F82 /* DetailViewModel.swift in Sources */,
-				42DC88012B62F6AD00250F82 /* LocalDataModel.swift in Sources */,
 				42DC88052B637F9E00250F82 /* UserDefaultsHelper.swift in Sources */,
 				42DC87D92B61A68500250F82 /* LoginUseCase.swift in Sources */,
 				42DC88242B642F1000250F82 /* ModelDragonBall.swift in Sources */,
 				42DC876A2B60EA1700250F82 /* AppDelegate.swift in Sources */,
 				42DC87E22B61A7CB00250F82 /* NetworkError.swift in Sources */,
-				42DC882E2B6449ED00250F82 /* HomeUseCase.swift in Sources */,
 				42DC881E2B6409E200250F82 /* UiimageView.swift in Sources */,
 				42DC88172B6407ED00250F82 /* HeroCollectionViewCell.swift in Sources */,
-				42DC882B2B643C4400250F82 /* HomeCollectionViewController.swift in Sources */,
+				42DC882B2B643C4400250F82 /* HeroesCollectionViewController.swift in Sources */,
 				42DC87DE2B61A75200250F82 /* EndPoints.swift in Sources */,
 				42DC876C2B60EA1700250F82 /* SceneDelegate.swift in Sources */,
 			);
@@ -550,7 +540,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42DC880F2B63F19500250F82 /* HomeViewModel.swift in Sources */,
+				42DC880F2B63F19500250F82 /* HeroesViewModel.swift in Sources */,
 				42DC88062B637F9E00250F82 /* UserDefaultsHelper.swift in Sources */,
 				42DC87B92B6185EA00250F82 /* LoginViewController.swift in Sources */,
 				42DC87E32B61A7CB00250F82 /* NetworkError.swift in Sources */,
@@ -562,7 +552,6 @@
 				42DC87C52B618D5E00250F82 /* GenericSatatusLoad.swift in Sources */,
 				42DC88182B6407ED00250F82 /* HeroCollectionViewCell.swift in Sources */,
 				42DC87EB2B61A8A800250F82 /* HTTPResponseCodes.swift in Sources */,
-				42DC88022B62F6AD00250F82 /* LocalDataModel.swift in Sources */,
 				42DC87FE2B62EDE000250F82 /* APIClient.swift in Sources */,
 				42DC880B2B638C6E00250F82 /* UIViewController.swift in Sources */,
 				42DC87DA2B61A68500250F82 /* LoginUseCase.swift in Sources */,
@@ -574,14 +563,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				42DC87EC2B61A8A800250F82 /* HTTPResponseCodes.swift in Sources */,
-				42DC88102B63F19500250F82 /* HomeViewModel.swift in Sources */,
+				42DC88102B63F19500250F82 /* HeroesViewModel.swift in Sources */,
 				42DC87FF2B62EDE000250F82 /* APIClient.swift in Sources */,
 				42DC87E82B61A83C00250F82 /* HTTPMethods.swift in Sources */,
 				42DC87C22B618B5E00250F82 /* LoginViewModel.swift in Sources */,
 				42DC87C62B618D5E00250F82 /* GenericSatatusLoad.swift in Sources */,
 				42DC87BA2B6185EA00250F82 /* LoginViewController.swift in Sources */,
 				42DC880C2B638C6E00250F82 /* UIViewController.swift in Sources */,
-				42DC88032B62F6AD00250F82 /* LocalDataModel.swift in Sources */,
 				42DC88072B637F9E00250F82 /* UserDefaultsHelper.swift in Sources */,
 				42DC87DB2B61A68500250F82 /* LoginUseCase.swift in Sources */,
 				42DC878D2B60EA1900250F82 /* DragonBallMVVMUITestsLaunchTests.swift in Sources */,

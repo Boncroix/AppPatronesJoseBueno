@@ -68,6 +68,46 @@ final class UseCaseTest: XCTestCase {
         expectedTransformation = ""
     }
     
+    // MARK: - Test loginUseCase
+    func test_loginUseCase() throws {
+        // Given
+        let tokenData = try XCTUnwrap(expectedToken.data(using: .utf8))
+        let (user, password) = ("user", "password")
+        MockURLProtocol.error = nil
+        MockURLProtocol.requestHandler = { request in
+            let loginString = String(format: "%@:%@", user, password)
+            let base64String = loginString.data(using: .utf8)!.base64EncodedString()
+            XCTAssertEqual(request.httpMethod, HTTPMethods.post)
+            XCTAssertEqual(
+                request.value(forHTTPHeaderField: "Authorization"),
+                "Basic \(base64String)")
+            let response = try XCTUnwrap(
+                HTTPURLResponse(
+                    url: URL(string: EndPoints.url.rawValue)!,
+                    statusCode: HTTPResponseCodes.SUCCESS,
+                    httpVersion: nil,
+                    headerFields: ["Content-Type": HTTPMethods.contenType])
+            )
+            return (response, tokenData)
+        }
+        
+        // When
+        let expectation = expectation(description: "Login Success")
+        var receivedToken: String?
+        sutLoginUseCase.login(user: user, password: password) { token in
+            receivedToken = token
+            expectation.fulfill()
+        } onError: { networkError in
+            XCTFail("Expected success but received \(networkError)")
+            return
+        }
+        
+        // Then
+        wait(for: [expectation], timeout: 5)
+        XCTAssertNotNil(receivedToken)
+        XCTAssertEqual(receivedToken, expectedToken)
+    }
+    
     // MARK: - Test transformationsUseCase
     func test_transformationsUseCase() throws {
         // Given
@@ -142,46 +182,6 @@ final class UseCaseTest: XCTestCase {
         XCTAssertNotNil(receivedModelDragonBall)
         XCTAssertEqual(receivedModelDragonBall?[0].name ?? "", "Krilin")
         XCTAssertEqual(receivedModelDragonBall?[0].id ?? "", "D88BE50B-913D-4EA8-AC42-04D3AF1434E3")
-    }
-    
-    // MARK: - Test loginUseCase
-    func test_loginUseCase() throws {
-        // Given
-        let tokenData = try XCTUnwrap(expectedToken.data(using: .utf8))
-        let (user, password) = ("user", "password")
-        MockURLProtocol.error = nil
-        MockURLProtocol.requestHandler = { request in
-            let loginString = String(format: "%@:%@", user, password)
-            let base64String = loginString.data(using: .utf8)!.base64EncodedString()
-            XCTAssertEqual(request.httpMethod, HTTPMethods.post)
-            XCTAssertEqual(
-                request.value(forHTTPHeaderField: "Authorization"),
-                "Basic \(base64String)")
-            let response = try XCTUnwrap(
-                HTTPURLResponse(
-                    url: URL(string: EndPoints.url.rawValue)!,
-                    statusCode: HTTPResponseCodes.SUCCESS,
-                    httpVersion: nil,
-                    headerFields: ["Content-Type": HTTPMethods.contenType])
-            )
-            return (response, tokenData)
-        }
-        
-        // When
-        let expectation = expectation(description: "Login Success")
-        var receivedToken: String?
-        sutLoginUseCase.login(user: user, password: password) { token in
-            receivedToken = token
-            expectation.fulfill()
-        } onError: { networkError in
-            XCTFail("Expected success but received \(networkError)")
-            return
-        }
-        
-        // Then
-        wait(for: [expectation], timeout: 5)
-        XCTAssertNotNil(receivedToken)
-        XCTAssertEqual(receivedToken, expectedToken)
     }
 }
 

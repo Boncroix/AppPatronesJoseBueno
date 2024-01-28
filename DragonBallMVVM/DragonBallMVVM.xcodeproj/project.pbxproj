@@ -66,7 +66,6 @@
 		42DC882C2B643C4400250F82 /* HeroesCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC882A2B643C4400250F82 /* HeroesCollectionViewController.xib */; };
 		42DC88322B644B8400250F82 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88302B644B8400250F82 /* DetailViewController.swift */; };
 		42DC88332B644B8400250F82 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC88312B644B8400250F82 /* DetailViewController.xib */; };
-		42DC88382B6450B200250F82 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88372B6450B200250F82 /* DetailViewModel.swift */; };
 		42DC883A2B64E11100250F82 /* HeroesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88392B64E11100250F82 /* HeroesUseCase.swift */; };
 		42DC883D2B64F77C00250F82 /* HeroesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC883B2B64F77C00250F82 /* HeroesCollectionViewController.swift */; };
 		42DC88402B64F8AD00250F82 /* TransformationsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC883F2B64F8AD00250F82 /* TransformationsUseCase.swift */; };
@@ -138,7 +137,6 @@
 		42DC882A2B643C4400250F82 /* HeroesCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroesCollectionViewController.xib; sourceTree = "<group>"; };
 		42DC88302B644B8400250F82 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		42DC88312B644B8400250F82 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
-		42DC88372B6450B200250F82 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = SOURCE_ROOT; };
 		42DC88392B64E11100250F82 /* HeroesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesUseCase.swift; sourceTree = "<group>"; };
 		42DC883B2B64F77C00250F82 /* HeroesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeroesCollectionViewController.swift; path = "../../../../../../../Downloads/Clases Bootcam Movile/3. Fundamentos IOS/iOS-Fundamentos/Westeros/HeroesCollectionViewController.swift"; sourceTree = "<group>"; };
 		42DC883F2B64F8AD00250F82 /* TransformationsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationsUseCase.swift; sourceTree = "<group>"; };
@@ -259,7 +257,6 @@
 			isa = PBXGroup;
 			children = (
 				42DC88432B64FDBF00250F82 /* Transformations */,
-				42DC88362B64509C00250F82 /* Detail */,
 				42DC88352B644FE500250F82 /* Heroes */,
 				42DC87BE2B618B4B00250F82 /* Login */,
 			);
@@ -391,14 +388,6 @@
 				42DC880D2B63F19400250F82 /* HeroesViewModel.swift */,
 			);
 			path = Heroes;
-			sourceTree = "<group>";
-		};
-		42DC88362B64509C00250F82 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				42DC88372B6450B200250F82 /* DetailViewModel.swift */,
-			);
-			path = Detail;
 			sourceTree = "<group>";
 		};
 		42DC88432B64FDBF00250F82 /* Transformations */ = {
@@ -584,7 +573,6 @@
 				42DC87B82B6185EA00250F82 /* LoginViewController.swift in Sources */,
 				42DC880A2B638C6E00250F82 /* UIViewController.swift in Sources */,
 				42DC883D2B64F77C00250F82 /* HeroesCollectionViewController.swift in Sources */,
-				42DC88382B6450B200250F82 /* DetailViewModel.swift in Sources */,
 				42DC88052B637F9E00250F82 /* UserDefaultsHelper.swift in Sources */,
 				42DC87D92B61A68500250F82 /* LoginUseCase.swift in Sources */,
 				42DC88242B642F1000250F82 /* ModelDragonBall.swift in Sources */,

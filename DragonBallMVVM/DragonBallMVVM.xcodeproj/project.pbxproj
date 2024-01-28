@@ -19,9 +19,9 @@
 		424EC0AB2B66610E009CA460 /* ModelDragonBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88232B642F1000250F82 /* ModelDragonBall.swift */; };
 		424EC0AC2B666118009CA460 /* HeroesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88392B64E11100250F82 /* HeroesUseCase.swift */; };
 		424EC0AD2B666119009CA460 /* HeroesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88392B64E11100250F82 /* HeroesUseCase.swift */; };
+		42525D0C2B66CC2700644E24 /* ViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42525D0B2B66CC2700644E24 /* ViewModelTest.swift */; };
 		426FF1EB2B663DE0000F58FB /* UseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426FF1EA2B663DE0000F58FB /* UseCaseTest.swift */; };
 		426FF1EF2B6648FF000F58FB /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426FF1EE2B6648FF000F58FB /* MockURLProtocol.swift */; };
-		426FF1F12B665624000F58FB /* DragonBallMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426FF1F02B665624000F58FB /* DragonBallMVVMTests.swift */; };
 		42DC876A2B60EA1700250F82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87692B60EA1700250F82 /* AppDelegate.swift */; };
 		42DC876C2B60EA1700250F82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC876B2B60EA1700250F82 /* SceneDelegate.swift */; };
 		42DC87732B60EA1800250F82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42DC87722B60EA1800250F82 /* Assets.xcassets */; };
@@ -120,9 +120,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42525D0B2B66CC2700644E24 /* ViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTest.swift; sourceTree = "<group>"; };
 		426FF1EA2B663DE0000F58FB /* UseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseTest.swift; sourceTree = "<group>"; };
 		426FF1EE2B6648FF000F58FB /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
-		426FF1F02B665624000F58FB /* DragonBallMVVMTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DragonBallMVVMTests.swift; path = ../../../../.Trash/DragonBallMVVMTests.swift; sourceTree = "<group>"; };
 		42DC87662B60EA1700250F82 /* DragonBallMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonBallMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DC87692B60EA1700250F82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42DC876B2B60EA1700250F82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -237,7 +237,7 @@
 			children = (
 				426FF1ED2B6648E4000F58FB /* Helpers */,
 				426FF1EA2B663DE0000F58FB /* UseCaseTest.swift */,
-				426FF1F02B665624000F58FB /* DragonBallMVVMTests.swift */,
+				42525D0B2B66CC2700644E24 /* ViewModelTest.swift */,
 			);
 			path = DragonBallMVVMTests;
 			sourceTree = "<group>";
@@ -627,7 +627,6 @@
 				42DC88062B637F9E00250F82 /* UserDefaultsHelper.swift in Sources */,
 				42DC87B92B6185EA00250F82 /* LoginViewController.swift in Sources */,
 				424EC0A42B6660A9009CA460 /* HeroesCollectionViewController.swift in Sources */,
-				426FF1F12B665624000F58FB /* DragonBallMVVMTests.swift in Sources */,
 				42DC87E32B61A7CB00250F82 /* NetworkError.swift in Sources */,
 				42DC88542B65127400250F82 /* TransformationsTableViewCell.swift in Sources */,
 				42DC881F2B6409E200250F82 /* UiimageView.swift in Sources */,
@@ -636,6 +635,7 @@
 				424EC0AC2B666118009CA460 /* HeroesUseCase.swift in Sources */,
 				42DC87E72B61A83C00250F82 /* HTTPMethods.swift in Sources */,
 				424EC0A22B6660A3009CA460 /* DetailViewController.swift in Sources */,
+				42525D0C2B66CC2700644E24 /* ViewModelTest.swift in Sources */,
 				42DC88462B64FDDC00250F82 /* TransformationsViewModel.swift in Sources */,
 				42DC87C52B618D5E00250F82 /* GenericSatatusLoad.swift in Sources */,
 				42DC884C2B65016A00250F82 /* TransformationsViewController.swift in Sources */,

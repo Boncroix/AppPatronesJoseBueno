@@ -27,7 +27,7 @@ final class HeroesViewModel {
     func loadHeros() {
         heroesStatusLoad?(.loading(true))
         
-        heroesUseCase.getHeros { [weak self] heroes in
+        heroesUseCase.getHeros(name: "") { [weak self] heroes in
             DispatchQueue.main.async {
                 self?.dataHeroes = heroes
                 self?.heroesStatusLoad?(.loaded)

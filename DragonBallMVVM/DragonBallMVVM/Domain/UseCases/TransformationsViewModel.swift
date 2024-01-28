@@ -13,7 +13,7 @@ final class TransformationsViewModel {
     var transformationsStatusLoad: ((GenericSatatusLoad) -> Void)?
     
     // MARK: - CaseUse
-    let transformationsUseCase: TransformationsUseCaseProtocol
+    private let transformationsUseCase: TransformationsUseCaseProtocol
     
     // MARK: - Model
     var dataTransformations: [ModelDragonBall] = []

@@ -15,9 +15,11 @@ final class LoginViewController: UIViewController {
     @IBOutlet weak var errorEmailLabel: UILabel!
     @IBOutlet weak var errorPasswordLabel: UILabel!
     @IBOutlet weak var loadingView: UIView!
+    @IBOutlet weak var loginStackView: UIStackView!
     
     // MARK: - ViewModel
     private var viewModel: LoginViewModel
+    private var saveUser: Bool = false
     
     // MARK: - Inits
     init(viewModel: LoginViewModel = LoginViewModel()) {
@@ -34,11 +36,13 @@ final class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setObservers()
+        setUpViewController()
     }
     
     // MARK: - IBAction
     @IBAction func didTapLoginButton(_ sender: Any) {
-        viewModel.onLoginButton(email: emailTextField.text, password: passwordTextField.text)
+        viewModel.onLoginButton(email: emailTextField.text,
+                                password: passwordTextField.text)
     }
 }
 
@@ -84,4 +88,18 @@ extension LoginViewController {
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         present(alert, animated: true)
     }
+    
+    private func setUpViewController() {
+        let showPasswordButton = UIButton(type: .system)
+        showPasswordButton.setImage(UIImage(systemName: "eye"), for: .normal)
+        showPasswordButton.addTarget(self, action: #selector(didTapShowPasswordButton), for: [.touchDown, .touchUpInside])
+        
+        passwordTextField.rightView = showPasswordButton
+        passwordTextField.rightViewMode = .always
+    }
+    
+    @objc func didTapShowPasswordButton(sender: UIButton) {
+        passwordTextField.isSecureTextEntry.toggle()
+    }
 }
+

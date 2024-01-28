@@ -23,6 +23,7 @@ final class TransformationsViewModel {
         self.transformationsUseCase = transformationsUseCase
     }
     
+    // MARK: - Methods
     func loadTransformations(id: String) {
         transformationsStatusLoad?(.loading(true))
         transformationsUseCase.getTransformations(id: id) { [weak self] transformations in

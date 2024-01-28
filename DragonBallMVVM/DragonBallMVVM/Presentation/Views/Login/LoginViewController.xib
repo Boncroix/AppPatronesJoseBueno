@@ -40,7 +40,7 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="suN-iM-gCI">
                                     <rect key="frame" x="0.0" y="0.0" width="369" height="44"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b06-S2-Cyq">
+                                        <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b06-S2-Cyq">
                                             <rect key="frame" x="0.0" y="0.0" width="369" height="44"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="44" id="xx5-V4-Bml"/>
@@ -62,7 +62,7 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="se2-dE-e5f">
                                             <rect key="frame" x="0.0" y="0.0" width="369" height="44"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CKj-Zg-9t8">
+                                                <textField opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CKj-Zg-9t8">
                                                     <rect key="frame" x="0.0" y="0.0" width="369" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="HdN-SN-j64"/>

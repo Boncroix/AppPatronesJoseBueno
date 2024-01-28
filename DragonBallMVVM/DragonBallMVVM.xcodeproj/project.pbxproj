@@ -7,11 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		424EC0A22B6660A3009CA460 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88302B644B8400250F82 /* DetailViewController.swift */; };
+		424EC0A32B6660A4009CA460 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88302B644B8400250F82 /* DetailViewController.swift */; };
+		424EC0A42B6660A9009CA460 /* HeroesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC883B2B64F77C00250F82 /* HeroesCollectionViewController.swift */; };
+		424EC0A52B6660AA009CA460 /* HeroesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC883B2B64F77C00250F82 /* HeroesCollectionViewController.swift */; };
+		424EC0A62B6660DA009CA460 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC88312B644B8400250F82 /* DetailViewController.xib */; };
+		424EC0A72B6660DB009CA460 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC88312B644B8400250F82 /* DetailViewController.xib */; };
+		424EC0A82B6660EF009CA460 /* HeroesCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC882A2B643C4400250F82 /* HeroesCollectionViewController.xib */; };
+		424EC0A92B6660EF009CA460 /* HeroesCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC882A2B643C4400250F82 /* HeroesCollectionViewController.xib */; };
+		424EC0AA2B66610D009CA460 /* ModelDragonBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88232B642F1000250F82 /* ModelDragonBall.swift */; };
+		424EC0AB2B66610E009CA460 /* ModelDragonBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88232B642F1000250F82 /* ModelDragonBall.swift */; };
+		424EC0AC2B666118009CA460 /* HeroesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88392B64E11100250F82 /* HeroesUseCase.swift */; };
+		424EC0AD2B666119009CA460 /* HeroesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88392B64E11100250F82 /* HeroesUseCase.swift */; };
+		426FF1EB2B663DE0000F58FB /* UseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426FF1EA2B663DE0000F58FB /* UseCaseTest.swift */; };
+		426FF1EF2B6648FF000F58FB /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426FF1EE2B6648FF000F58FB /* MockURLProtocol.swift */; };
+		426FF1F12B665624000F58FB /* DragonBallMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426FF1F02B665624000F58FB /* DragonBallMVVMTests.swift */; };
 		42DC876A2B60EA1700250F82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87692B60EA1700250F82 /* AppDelegate.swift */; };
 		42DC876C2B60EA1700250F82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC876B2B60EA1700250F82 /* SceneDelegate.swift */; };
 		42DC87732B60EA1800250F82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42DC87722B60EA1800250F82 /* Assets.xcassets */; };
 		42DC87762B60EA1800250F82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DC87742B60EA1800250F82 /* LaunchScreen.storyboard */; };
-		42DC87812B60EA1900250F82 /* DragonBallMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87802B60EA1900250F82 /* DragonBallMVVMTests.swift */; };
 		42DC878B2B60EA1900250F82 /* DragonBallMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC878A2B60EA1900250F82 /* DragonBallMVVMUITests.swift */; };
 		42DC878D2B60EA1900250F82 /* DragonBallMVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC878C2B60EA1900250F82 /* DragonBallMVVMUITestsLaunchTests.swift */; };
 		42DC87B82B6185EA00250F82 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87B62B6185EA00250F82 /* LoginViewController.swift */; };
@@ -106,6 +120,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		426FF1EA2B663DE0000F58FB /* UseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseTest.swift; sourceTree = "<group>"; };
+		426FF1EE2B6648FF000F58FB /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		426FF1F02B665624000F58FB /* DragonBallMVVMTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DragonBallMVVMTests.swift; path = ../../../../.Trash/DragonBallMVVMTests.swift; sourceTree = "<group>"; };
 		42DC87662B60EA1700250F82 /* DragonBallMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonBallMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DC87692B60EA1700250F82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42DC876B2B60EA1700250F82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,7 +130,6 @@
 		42DC87752B60EA1800250F82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42DC87772B60EA1800250F82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42DC877C2B60EA1900250F82 /* DragonBallMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonBallMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		42DC87802B60EA1900250F82 /* DragonBallMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallMVVMTests.swift; sourceTree = "<group>"; };
 		42DC87862B60EA1900250F82 /* DragonBallMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonBallMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DC878A2B60EA1900250F82 /* DragonBallMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallMVVMUITests.swift; sourceTree = "<group>"; };
 		42DC878C2B60EA1900250F82 /* DragonBallMVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallMVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -172,11 +188,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		426FF1ED2B6648E4000F58FB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				426FF1EE2B6648FF000F58FB /* MockURLProtocol.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		42DC875D2B60EA1700250F82 = {
 			isa = PBXGroup;
 			children = (
 				42DC87682B60EA1700250F82 /* DragonBallMVVM */,
-				42DC88082B638C4800250F82 /* Extensions */,
 				42DC877F2B60EA1900250F82 /* DragonBallMVVMTests */,
 				42DC87892B60EA1900250F82 /* DragonBallMVVMUITests */,
 				42DC87672B60EA1700250F82 /* Products */,
@@ -204,6 +227,7 @@
 				42DC879B2B6144CE00250F82 /* Presentation */,
 				42DC879A2B6144C800250F82 /* Domain */,
 				42DC87992B6144BE00250F82 /* Data */,
+				42DC88082B638C4800250F82 /* Extensions */,
 			);
 			path = DragonBallMVVM;
 			sourceTree = "<group>";
@@ -211,7 +235,9 @@
 		42DC877F2B60EA1900250F82 /* DragonBallMVVMTests */ = {
 			isa = PBXGroup;
 			children = (
-				42DC87802B60EA1900250F82 /* DragonBallMVVMTests.swift */,
+				426FF1ED2B6648E4000F58FB /* Helpers */,
+				426FF1EA2B663DE0000F58FB /* UseCaseTest.swift */,
+				426FF1F02B665624000F58FB /* DragonBallMVVMTests.swift */,
 			);
 			path = DragonBallMVVMTests;
 			sourceTree = "<group>";
@@ -338,8 +364,8 @@
 			isa = PBXGroup;
 			children = (
 				42DC88342B644FA200250F82 /* Cell Custom Heroes */,
-				42DC882A2B643C4400250F82 /* HeroesCollectionViewController.xib */,
 				42DC883B2B64F77C00250F82 /* HeroesCollectionViewController.swift */,
+				42DC882A2B643C4400250F82 /* HeroesCollectionViewController.xib */,
 			);
 			path = Heroes;
 			sourceTree = "<group>";
@@ -538,6 +564,8 @@
 			files = (
 				42DC88572B65127400250F82 /* TransformationsTableViewCell.xib in Resources */,
 				42DC881B2B6407ED00250F82 /* HeroCollectionViewCell.xib in Resources */,
+				424EC0A82B6660EF009CA460 /* HeroesCollectionViewController.xib in Resources */,
+				424EC0A62B6660DA009CA460 /* DetailViewController.xib in Resources */,
 				42DC884F2B65016A00250F82 /* TransformationsViewController.xib in Resources */,
 				42DC87BC2B6185EA00250F82 /* LoginViewController.xib in Resources */,
 			);
@@ -549,6 +577,8 @@
 			files = (
 				42DC88582B65127400250F82 /* TransformationsTableViewCell.xib in Resources */,
 				42DC881C2B6407ED00250F82 /* HeroCollectionViewCell.xib in Resources */,
+				424EC0A92B6660EF009CA460 /* HeroesCollectionViewController.xib in Resources */,
+				424EC0A72B6660DB009CA460 /* DetailViewController.xib in Resources */,
 				42DC88502B65016A00250F82 /* TransformationsViewController.xib in Resources */,
 				42DC87BD2B6185EA00250F82 /* LoginViewController.xib in Resources */,
 			);
@@ -592,25 +622,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				426FF1EF2B6648FF000F58FB /* MockURLProtocol.swift in Sources */,
 				42DC880F2B63F19500250F82 /* HeroesViewModel.swift in Sources */,
 				42DC88062B637F9E00250F82 /* UserDefaultsHelper.swift in Sources */,
 				42DC87B92B6185EA00250F82 /* LoginViewController.swift in Sources */,
+				424EC0A42B6660A9009CA460 /* HeroesCollectionViewController.swift in Sources */,
+				426FF1F12B665624000F58FB /* DragonBallMVVMTests.swift in Sources */,
 				42DC87E32B61A7CB00250F82 /* NetworkError.swift in Sources */,
 				42DC88542B65127400250F82 /* TransformationsTableViewCell.swift in Sources */,
 				42DC881F2B6409E200250F82 /* UiimageView.swift in Sources */,
-				42DC87812B60EA1900250F82 /* DragonBallMVVMTests.swift in Sources */,
 				42DC87C12B618B5E00250F82 /* LoginViewModel.swift in Sources */,
 				42DC87DF2B61A75200250F82 /* EndPoints.swift in Sources */,
+				424EC0AC2B666118009CA460 /* HeroesUseCase.swift in Sources */,
 				42DC87E72B61A83C00250F82 /* HTTPMethods.swift in Sources */,
+				424EC0A22B6660A3009CA460 /* DetailViewController.swift in Sources */,
 				42DC88462B64FDDC00250F82 /* TransformationsViewModel.swift in Sources */,
 				42DC87C52B618D5E00250F82 /* GenericSatatusLoad.swift in Sources */,
 				42DC884C2B65016A00250F82 /* TransformationsViewController.swift in Sources */,
+				426FF1EB2B663DE0000F58FB /* UseCaseTest.swift in Sources */,
 				42DC88412B64F8AD00250F82 /* TransformationsUseCase.swift in Sources */,
 				42DC88182B6407ED00250F82 /* HeroCollectionViewCell.swift in Sources */,
 				42DC87EB2B61A8A800250F82 /* HTTPResponseCodes.swift in Sources */,
 				42DC87FE2B62EDE000250F82 /* APIClient.swift in Sources */,
 				42DC880B2B638C6E00250F82 /* UIViewController.swift in Sources */,
 				42DC87DA2B61A68500250F82 /* LoginUseCase.swift in Sources */,
+				424EC0AA2B66610D009CA460 /* ModelDragonBall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,11 +660,14 @@
 				42DC87E82B61A83C00250F82 /* HTTPMethods.swift in Sources */,
 				42DC87C22B618B5E00250F82 /* LoginViewModel.swift in Sources */,
 				42DC88472B64FDDC00250F82 /* TransformationsViewModel.swift in Sources */,
+				424EC0A32B6660A4009CA460 /* DetailViewController.swift in Sources */,
 				42DC87C62B618D5E00250F82 /* GenericSatatusLoad.swift in Sources */,
 				42DC87BA2B6185EA00250F82 /* LoginViewController.swift in Sources */,
 				42DC880C2B638C6E00250F82 /* UIViewController.swift in Sources */,
+				424EC0A52B6660AA009CA460 /* HeroesCollectionViewController.swift in Sources */,
 				42DC88072B637F9E00250F82 /* UserDefaultsHelper.swift in Sources */,
 				42DC88422B64F8AD00250F82 /* TransformationsUseCase.swift in Sources */,
+				424EC0AD2B666119009CA460 /* HeroesUseCase.swift in Sources */,
 				42DC87DB2B61A68500250F82 /* LoginUseCase.swift in Sources */,
 				42DC878D2B60EA1900250F82 /* DragonBallMVVMUITestsLaunchTests.swift in Sources */,
 				42DC87E42B61A7CB00250F82 /* NetworkError.swift in Sources */,
@@ -637,6 +676,7 @@
 				42DC88202B6409E200250F82 /* UiimageView.swift in Sources */,
 				42DC88192B6407ED00250F82 /* HeroCollectionViewCell.swift in Sources */,
 				42DC87E02B61A75200250F82 /* EndPoints.swift in Sources */,
+				424EC0AB2B66610E009CA460 /* ModelDragonBall.swift in Sources */,
 				42DC878B2B60EA1900250F82 /* DragonBallMVVMUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

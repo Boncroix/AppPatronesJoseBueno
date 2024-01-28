@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - Protocol
 protocol HeroesUseCaseProtocol {
     func getHeros(onSuccess: @escaping ([ModelDragonBall]) -> Void,
                   onError: @escaping (NetworkError) -> Void)
@@ -22,6 +23,7 @@ final class HeroesUseCase: HeroesUseCaseProtocol {
         self.client = client
     }
     
+    // MARK: - Methods
     func getHeros(onSuccess: @escaping ([ModelDragonBall]) -> Void,
                   onError: @escaping (NetworkError) -> Void) {
         

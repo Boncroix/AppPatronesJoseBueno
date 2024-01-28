@@ -7,8 +7,7 @@
 
 import Foundation
 
-// MARK: - API Client
-
+// MARK: - Protocol
 protocol APIClientProtocol {
     var session: URLSession { get }
     func request<T: Decodable>(
@@ -22,14 +21,18 @@ protocol APIClientProtocol {
     )
 }
 
+// MARK: - AppClient
 struct APIClient: APIClientProtocol {
-
+    
+    // MARK: - Session
     let session: URLSession
     
+    // MARK: - Inits
     init(session: URLSession = .shared) {
         self.session = session
     }
     
+    // MARK: - Request
     func request<T: Decodable>(
         _ request: URLRequest,
         using type: T.Type,
@@ -63,6 +66,7 @@ struct APIClient: APIClientProtocol {
         .resume()
     }
     
+    // MARK: - JsonWebTokens
     func jwt(
         _ request: URLRequest,
         completion: @escaping (Result<String, NetworkError>) -> Void

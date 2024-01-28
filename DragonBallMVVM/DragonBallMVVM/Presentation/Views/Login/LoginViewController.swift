@@ -17,7 +17,7 @@ final class LoginViewController: UIViewController {
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var loginStackView: UIStackView!
     
-    // MARK: - ViewModel
+    // MARK: - Properties
     private var viewModel: LoginViewModel
     private var saveUser: Bool = false
     
@@ -46,7 +46,7 @@ final class LoginViewController: UIViewController {
     }
 }
 
-// MARK: - EXTENSION
+// MARK: - SetObservers
 extension LoginViewController {
     private func setObservers() {
         viewModel.loginViewState = { [weak self] status in
@@ -70,25 +70,15 @@ extension LoginViewController {
             }
         }
     }
-    
-    // MARK: - Navigate
+
     private func navigateToHeroes() {
         let nextVC = HeroesCollectionViewController()
         navigationController?.setViewControllers([nextVC], animated: true)
     }
+}
     
-    
-    // MARK: - Alert
-    private func showAlert(message: String) {
-        let alert = UIAlertController(
-            title: "ERROR NETWORK",
-            message: message,
-            preferredStyle: .alert
-        )
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
-        present(alert, animated: true)
-    }
-    
+// MARK: - setUp
+extension LoginViewController {
     private func setUpViewController() {
         let showPasswordButton = UIButton(type: .system)
         showPasswordButton.setImage(UIImage(systemName: "eye"), for: .normal)
@@ -101,5 +91,17 @@ extension LoginViewController {
     @objc func didTapShowPasswordButton(sender: UIButton) {
         passwordTextField.isSecureTextEntry.toggle()
     }
+    
+    private func showAlert(message: String) {
+        let alert = UIAlertController(
+            title: "ERROR NETWORK",
+            message: message,
+            preferredStyle: .alert
+        )
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
+    }
 }
+    
+
 

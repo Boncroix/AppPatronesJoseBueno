@@ -13,7 +13,7 @@ final class HeroesViewModel {
     var heroesStatusLoad: ((GenericSatatusLoad) -> Void)?
     
     // MARK: - CaseUse
-    let heroesUseCase: HeroesUseCaseProtocol
+    private let heroesUseCase: HeroesUseCaseProtocol
     
     // MARK: - Model
     var dataHeroes: [ModelDragonBall] = []
@@ -23,6 +23,7 @@ final class HeroesViewModel {
         self.heroesUseCase = heroesUseCase
     }
     
+    // MARK: - Methods
     func loadHeros() {
         heroesStatusLoad?(.loading(true))
         

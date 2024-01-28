@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - Protocol
 protocol TransformationsUseCaseProtocol {
     func getTransformations(id: String,
                             onSuccess: @escaping ([ModelDragonBall]) -> Void,
@@ -23,6 +24,7 @@ final class TransformationsUseCase: TransformationsUseCaseProtocol {
         self.client = client
     }
     
+    // MARK: - Methods
     func getTransformations(id: String,
                             onSuccess: @escaping ([ModelDragonBall]) -> Void,
                             onError: @escaping (NetworkError) -> Void) {

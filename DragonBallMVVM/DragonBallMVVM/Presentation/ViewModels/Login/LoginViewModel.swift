@@ -7,20 +7,20 @@
 
 import Foundation
 
-
 final class LoginViewModel {
     
-    // MARK: binding con UI
+    // MARK: - Binding con UI
     var loginViewState: ((GenericSatatusLoad) -> Void)?
     
-    // MARK: UseCase
+    // MARK: - CaseUse
     private let loginUseCase: LoginUseCaseProtocol
     
-    // MARK: Init
+    // MARK: - Inits
     init(loginUseCase: LoginUseCaseProtocol = LoginUseCase()) {
         self.loginUseCase = loginUseCase
     }
     
+    // MARK: - Methods
     func onLoginButton(email: String?, password: String?) {
         loginViewState?(.loading(true))
         

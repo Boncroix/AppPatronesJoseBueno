@@ -16,11 +16,11 @@ final class TransformationsViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
     
-    // MARK: - Model
+    // MARK: - Properties
     private var transformations: [ModelDragonBall]
     private var dataSource: DataSource?
     
-    // MARK: - Init
+    // MARK: - Inits
     init(transformations: [ModelDragonBall]) {
         self.transformations = transformations
         super.init(nibName: nil, bundle: nil)
@@ -55,7 +55,7 @@ extension TransformationsViewController: UITableViewDelegate {
     }
 }
 
-// MARK: - setUp TableView
+// MARK: - setUp
 extension TransformationsViewController {
     func setUpTableView() {
         tableView.register(

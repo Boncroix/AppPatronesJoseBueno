@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+final class DetailViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet weak var heroNameLabel: UILabel!
@@ -15,11 +15,11 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var heroDescription: UITextView!
     @IBOutlet weak var heroTransformationsButton: UIButton!
     
-    // MARK: - Model
+    // MARK: - Properties
     private var hero: ModelDragonBall
     private var transformationsViewModel: TransformationsViewModel
     
-    // MARK: - Init
+    // MARK: - Inits
     init(hero: ModelDragonBall,
          transformationsViewModel : TransformationsViewModel = TransformationsViewModel()) {
         self.hero = hero
@@ -40,6 +40,21 @@ class DetailViewController: UIViewController {
         configure()
     }
     
+    // MARK: - Actions
+    @IBAction func didTapTransformationsButton(_ sender: Any) {
+        var customListTransformations = transformationsViewModel.dataTransformations
+        customListTransformations.sort {
+            let numero1 = Int($0.name.components(separatedBy: ".").first ?? "") ?? 0
+            let numero2 = Int($1.name.components(separatedBy: ".").first ?? "") ?? 0
+            return numero1 < numero2
+        }
+        let nextVC = TransformationsViewController(transformations: customListTransformations)
+        navigationController?.pushViewController(nextVC, animated: true)
+    }
+}
+    
+// MARK: - SetObservers
+extension DetailViewController {
     private func setObservers() {
         transformationsViewModel.transformationsStatusLoad = { [weak self] status in
             switch status {
@@ -53,21 +68,10 @@ class DetailViewController: UIViewController {
             }
         }
     }
-    
-    // MARK: - Actions
-    @IBAction func didTapTransformationsButton(_ sender: Any) {
-        var customListTransformations = transformationsViewModel.dataTransformations
-        customListTransformations.sort {
-            let numero1 = Int($0.name.components(separatedBy: ".").first ?? "") ?? 0
-            let numero2 = Int($1.name.components(separatedBy: ".").first ?? "") ?? 0
-            return numero1 < numero2
-        }
-        let nextVC = TransformationsViewController(transformations: customListTransformations)
-        navigationController?.pushViewController(nextVC, animated: true)
-    }
-    
-    
-    // MARK: - Configure
+}
+ 
+// MARK: - setUp
+extension DetailViewController {
     func configure() {
         setupNavigationBarWithLogout()
         heroNameLabel.text = hero.name
@@ -77,9 +81,11 @@ class DetailViewController: UIViewController {
         }
         heroImage.setImage(url: imageURL)
     }
-    
+
     func checkTransformations() {
         heroTransformationsButton.isHidden = transformationsViewModel.dataTransformations.isEmpty
     }
 }
+
+
 

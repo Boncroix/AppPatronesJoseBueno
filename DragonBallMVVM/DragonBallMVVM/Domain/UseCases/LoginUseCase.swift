@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+// MARK: - Protocol
 protocol LoginUseCaseProtocol {
     func login(user: String,
                password: String,
@@ -17,12 +17,15 @@ protocol LoginUseCaseProtocol {
 
 final class LoginUseCase: LoginUseCaseProtocol {
     
+    // MARK: - Client
     private let client: APIClientProtocol
     
+    // MARK: - Inits
     init(client: APIClientProtocol = APIClient()) {
         self.client = client
     }
     
+    // MARK: - Methods
     func login(user: String,
                password: String,
                onSuscces: @escaping (String?) -> Void,

@@ -2,7 +2,15 @@
 
 Esta aplicación, desarrollada en Swift con Xcode, es una guía interactiva de personajes de Dragon Ball y sus transformaciones. Inicialmente implementada con el patrón MVC, la nueva versión utiliza el patrón MVVM para mejorar la estructura y separación de responsabilidades.
 
-
+  <table>
+  <tr>
+    <td><img src="https://github.com/Boncroix/AppPatronesJoseBueno/blob/main/Images/Login.png" width="200" /></td>
+    <td><img src="https://github.com/Boncroix/AppPatronesJoseBueno/blob/main/Images/Heroes.png" width="200" /></td>
+    <td><img src="https://github.com/Boncroix/AppPatronesJoseBueno/blob/main/Images/Detail.png" width="200" /></td>
+    <td><img src="https://github.com/Boncroix/AppPatronesJoseBueno/blob/main/Images/Transformations.png" width="200" /></td>
+    <td><img src="https://github.com/Boncroix/AppPatronesJoseBueno/blob/main/Images/DetailTransformations.png" width="200" /></td>
+  </tr>
+  </table>
 
 - **Versión Antigua con MVC:** Si deseas explorar la versión anterior de la aplicación que utiliza el patrón MVC, puedes encontrar el código en [GitHub](https://github.com/Boncroix/Practica_Fundamentos-iOS).
 

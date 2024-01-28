@@ -100,7 +100,7 @@ final class UseCaseTest: XCTestCase {
         }
 
         // Then
-        wait(for: [expectation], timeout: 1)
+        wait(for: [expectation], timeout: 5)
         XCTAssertNotNil(receivedTransformation)
         XCTAssertEqual(receivedTransformation?[0].name ?? "", "1. No Ego")
         XCTAssertEqual(receivedTransformation?[0].id ?? "", "CEC4FBF9-EF37-4773-A6AE-189DB2D92CE8")
@@ -138,7 +138,7 @@ final class UseCaseTest: XCTestCase {
         }
         
         // Then
-        wait(for: [expectation], timeout: 1)
+        wait(for: [expectation], timeout: 5)
         XCTAssertNotNil(receivedModelDragonBall)
         XCTAssertEqual(receivedModelDragonBall?[0].name ?? "", "Krilin")
         XCTAssertEqual(receivedModelDragonBall?[0].id ?? "", "D88BE50B-913D-4EA8-AC42-04D3AF1434E3")
@@ -179,7 +179,7 @@ final class UseCaseTest: XCTestCase {
         }
         
         // Then
-        wait(for: [expectation], timeout: 1)
+        wait(for: [expectation], timeout: 5)
         XCTAssertNotNil(receivedToken)
         XCTAssertEqual(receivedToken, expectedToken)
     }

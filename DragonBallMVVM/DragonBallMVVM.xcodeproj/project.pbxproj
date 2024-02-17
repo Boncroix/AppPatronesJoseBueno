@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4234B6F62B80F3BD0000C12C /* HeroesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4234B6F52B80F3BD0000C12C /* HeroesCollectionViewController.swift */; };
+		4234B6F72B80F3C20000C12C /* HeroesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4234B6F52B80F3BD0000C12C /* HeroesCollectionViewController.swift */; };
+		4234B6F82B80F3C20000C12C /* HeroesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4234B6F52B80F3BD0000C12C /* HeroesCollectionViewController.swift */; };
 		424EC0A22B6660A3009CA460 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88302B644B8400250F82 /* DetailViewController.swift */; };
 		424EC0A32B6660A4009CA460 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88302B644B8400250F82 /* DetailViewController.swift */; };
-		424EC0A42B6660A9009CA460 /* HeroesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC883B2B64F77C00250F82 /* HeroesCollectionViewController.swift */; };
-		424EC0A52B6660AA009CA460 /* HeroesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC883B2B64F77C00250F82 /* HeroesCollectionViewController.swift */; };
 		424EC0A62B6660DA009CA460 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC88312B644B8400250F82 /* DetailViewController.xib */; };
 		424EC0A72B6660DB009CA460 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC88312B644B8400250F82 /* DetailViewController.xib */; };
 		424EC0A82B6660EF009CA460 /* HeroesCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC882A2B643C4400250F82 /* HeroesCollectionViewController.xib */; };
@@ -20,6 +21,9 @@
 		424EC0AC2B666118009CA460 /* HeroesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88392B64E11100250F82 /* HeroesUseCase.swift */; };
 		424EC0AD2B666119009CA460 /* HeroesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88392B64E11100250F82 /* HeroesUseCase.swift */; };
 		42525D0C2B66CC2700644E24 /* ViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42525D0B2B66CC2700644E24 /* ViewModelTest.swift */; };
+		425BE73A2B80F8AB00B094B9 /* TransformationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425BE7392B80F8AB00B094B9 /* TransformationsViewModel.swift */; };
+		425BE73D2B80F8D900B094B9 /* TransformationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425BE73B2B80F8D900B094B9 /* TransformationsViewController.swift */; };
+		425BE73E2B80F8D900B094B9 /* TransformationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425BE73C2B80F8D900B094B9 /* TransformationsViewController.xib */; };
 		426FF1EB2B663DE0000F58FB /* UseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426FF1EA2B663DE0000F58FB /* UseCaseTest.swift */; };
 		426FF1EF2B6648FF000F58FB /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426FF1EE2B6648FF000F58FB /* MockURLProtocol.swift */; };
 		42DC876A2B60EA1700250F82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC87692B60EA1700250F82 /* AppDelegate.swift */; };
@@ -81,19 +85,9 @@
 		42DC88322B644B8400250F82 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88302B644B8400250F82 /* DetailViewController.swift */; };
 		42DC88332B644B8400250F82 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC88312B644B8400250F82 /* DetailViewController.xib */; };
 		42DC883A2B64E11100250F82 /* HeroesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88392B64E11100250F82 /* HeroesUseCase.swift */; };
-		42DC883D2B64F77C00250F82 /* HeroesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC883B2B64F77C00250F82 /* HeroesCollectionViewController.swift */; };
 		42DC88402B64F8AD00250F82 /* TransformationsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC883F2B64F8AD00250F82 /* TransformationsUseCase.swift */; };
 		42DC88412B64F8AD00250F82 /* TransformationsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC883F2B64F8AD00250F82 /* TransformationsUseCase.swift */; };
 		42DC88422B64F8AD00250F82 /* TransformationsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC883F2B64F8AD00250F82 /* TransformationsUseCase.swift */; };
-		42DC88452B64FDDC00250F82 /* TransformationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88442B64FDDC00250F82 /* TransformationsViewModel.swift */; };
-		42DC88462B64FDDC00250F82 /* TransformationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88442B64FDDC00250F82 /* TransformationsViewModel.swift */; };
-		42DC88472B64FDDC00250F82 /* TransformationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88442B64FDDC00250F82 /* TransformationsViewModel.swift */; };
-		42DC884B2B65016900250F82 /* TransformationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88492B65016900250F82 /* TransformationsViewController.swift */; };
-		42DC884C2B65016A00250F82 /* TransformationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88492B65016900250F82 /* TransformationsViewController.swift */; };
-		42DC884D2B65016A00250F82 /* TransformationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88492B65016900250F82 /* TransformationsViewController.swift */; };
-		42DC884E2B65016A00250F82 /* TransformationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC884A2B65016900250F82 /* TransformationsViewController.xib */; };
-		42DC884F2B65016A00250F82 /* TransformationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC884A2B65016900250F82 /* TransformationsViewController.xib */; };
-		42DC88502B65016A00250F82 /* TransformationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC884A2B65016900250F82 /* TransformationsViewController.xib */; };
 		42DC88532B65127400250F82 /* TransformationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88512B65127400250F82 /* TransformationsTableViewCell.swift */; };
 		42DC88542B65127400250F82 /* TransformationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88512B65127400250F82 /* TransformationsTableViewCell.swift */; };
 		42DC88552B65127400250F82 /* TransformationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC88512B65127400250F82 /* TransformationsTableViewCell.swift */; };
@@ -120,7 +114,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4234B6F52B80F3BD0000C12C /* HeroesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesCollectionViewController.swift; sourceTree = "<group>"; };
 		42525D0B2B66CC2700644E24 /* ViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTest.swift; sourceTree = "<group>"; };
+		425BE7392B80F8AB00B094B9 /* TransformationsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformationsViewModel.swift; sourceTree = "<group>"; };
+		425BE73B2B80F8D900B094B9 /* TransformationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformationsViewController.swift; sourceTree = "<group>"; };
+		425BE73C2B80F8D900B094B9 /* TransformationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransformationsViewController.xib; sourceTree = "<group>"; };
 		426FF1EA2B663DE0000F58FB /* UseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseTest.swift; sourceTree = "<group>"; };
 		426FF1EE2B6648FF000F58FB /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		42DC87662B60EA1700250F82 /* DragonBallMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonBallMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,11 +152,7 @@
 		42DC88302B644B8400250F82 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		42DC88312B644B8400250F82 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		42DC88392B64E11100250F82 /* HeroesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesUseCase.swift; sourceTree = "<group>"; };
-		42DC883B2B64F77C00250F82 /* HeroesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeroesCollectionViewController.swift; path = "../../../../../../../Downloads/Clases Bootcam Movile/3. Fundamentos IOS/iOS-Fundamentos/Westeros/HeroesCollectionViewController.swift"; sourceTree = "<group>"; };
 		42DC883F2B64F8AD00250F82 /* TransformationsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationsUseCase.swift; sourceTree = "<group>"; };
-		42DC88442B64FDDC00250F82 /* TransformationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TransformationsViewModel.swift; path = DragonBallMVVM/Domain/UseCases/TransformationsViewModel.swift; sourceTree = SOURCE_ROOT; };
-		42DC88492B65016900250F82 /* TransformationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TransformationsViewController.swift; path = DragonBallMVVM/Domain/UseCases/TransformationsViewController.swift; sourceTree = SOURCE_ROOT; };
-		42DC884A2B65016900250F82 /* TransformationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TransformationsViewController.xib; path = DragonBallMVVM/Domain/UseCases/TransformationsViewController.xib; sourceTree = SOURCE_ROOT; };
 		42DC88512B65127400250F82 /* TransformationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationsTableViewCell.swift; sourceTree = "<group>"; };
 		42DC88522B65127400250F82 /* TransformationsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransformationsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -364,8 +358,8 @@
 			isa = PBXGroup;
 			children = (
 				42DC88342B644FA200250F82 /* Cell Custom Heroes */,
-				42DC883B2B64F77C00250F82 /* HeroesCollectionViewController.swift */,
 				42DC882A2B643C4400250F82 /* HeroesCollectionViewController.xib */,
+				4234B6F52B80F3BD0000C12C /* HeroesCollectionViewController.swift */,
 			);
 			path = Heroes;
 			sourceTree = "<group>";
@@ -419,7 +413,7 @@
 		42DC88432B64FDBF00250F82 /* Transformations */ = {
 			isa = PBXGroup;
 			children = (
-				42DC88442B64FDDC00250F82 /* TransformationsViewModel.swift */,
+				425BE7392B80F8AB00B094B9 /* TransformationsViewModel.swift */,
 			);
 			path = Transformations;
 			sourceTree = "<group>";
@@ -428,8 +422,8 @@
 			isa = PBXGroup;
 			children = (
 				42DC88592B65153C00250F82 /* Cell Custom Transformation */,
-				42DC88492B65016900250F82 /* TransformationsViewController.swift */,
-				42DC884A2B65016900250F82 /* TransformationsViewController.xib */,
+				425BE73B2B80F8D900B094B9 /* TransformationsViewController.swift */,
+				425BE73C2B80F8D900B094B9 /* TransformationsViewController.xib */,
 			);
 			path = Transformations;
 			sourceTree = "<group>";
@@ -548,12 +542,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				42DC87762B60EA1800250F82 /* LaunchScreen.storyboard in Resources */,
+				425BE73E2B80F8D900B094B9 /* TransformationsViewController.xib in Resources */,
 				42DC88332B644B8400250F82 /* DetailViewController.xib in Resources */,
 				42DC87732B60EA1800250F82 /* Assets.xcassets in Resources */,
 				42DC881A2B6407ED00250F82 /* HeroCollectionViewCell.xib in Resources */,
 				42DC88562B65127400250F82 /* TransformationsTableViewCell.xib in Resources */,
 				42DC882C2B643C4400250F82 /* HeroesCollectionViewController.xib in Resources */,
-				42DC884E2B65016A00250F82 /* TransformationsViewController.xib in Resources */,
 				42DC87BB2B6185EA00250F82 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,7 +560,6 @@
 				42DC881B2B6407ED00250F82 /* HeroCollectionViewCell.xib in Resources */,
 				424EC0A82B6660EF009CA460 /* HeroesCollectionViewController.xib in Resources */,
 				424EC0A62B6660DA009CA460 /* DetailViewController.xib in Resources */,
-				42DC884F2B65016A00250F82 /* TransformationsViewController.xib in Resources */,
 				42DC87BC2B6185EA00250F82 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,7 +572,6 @@
 				42DC881C2B6407ED00250F82 /* HeroCollectionViewCell.xib in Resources */,
 				424EC0A92B6660EF009CA460 /* HeroesCollectionViewController.xib in Resources */,
 				424EC0A72B6660DB009CA460 /* DetailViewController.xib in Resources */,
-				42DC88502B65016A00250F82 /* TransformationsViewController.xib in Resources */,
 				42DC87BD2B6185EA00250F82 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,18 +583,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4234B6F62B80F3BD0000C12C /* HeroesCollectionViewController.swift in Sources */,
 				42DC87EA2B61A8A800250F82 /* HTTPResponseCodes.swift in Sources */,
 				42DC880E2B63F19500250F82 /* HeroesViewModel.swift in Sources */,
 				42DC87FD2B62EDE000250F82 /* APIClient.swift in Sources */,
 				42DC87E62B61A83C00250F82 /* HTTPMethods.swift in Sources */,
-				42DC88452B64FDDC00250F82 /* TransformationsViewModel.swift in Sources */,
 				42DC87C02B618B5E00250F82 /* LoginViewModel.swift in Sources */,
 				42DC883A2B64E11100250F82 /* HeroesUseCase.swift in Sources */,
 				42DC87C42B618D5E00250F82 /* GenericSatatusLoad.swift in Sources */,
 				42DC88322B644B8400250F82 /* DetailViewController.swift in Sources */,
 				42DC87B82B6185EA00250F82 /* LoginViewController.swift in Sources */,
 				42DC880A2B638C6E00250F82 /* UIViewController.swift in Sources */,
-				42DC883D2B64F77C00250F82 /* HeroesCollectionViewController.swift in Sources */,
 				42DC88052B637F9E00250F82 /* UserDefaultsHelper.swift in Sources */,
 				42DC87D92B61A68500250F82 /* LoginUseCase.swift in Sources */,
 				42DC88242B642F1000250F82 /* ModelDragonBall.swift in Sources */,
@@ -613,8 +604,9 @@
 				42DC88172B6407ED00250F82 /* HeroCollectionViewCell.swift in Sources */,
 				42DC87DE2B61A75200250F82 /* EndPoints.swift in Sources */,
 				42DC876C2B60EA1700250F82 /* SceneDelegate.swift in Sources */,
-				42DC884B2B65016900250F82 /* TransformationsViewController.swift in Sources */,
 				42DC88532B65127400250F82 /* TransformationsTableViewCell.swift in Sources */,
+				425BE73A2B80F8AB00B094B9 /* TransformationsViewModel.swift in Sources */,
+				425BE73D2B80F8D900B094B9 /* TransformationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,7 +618,6 @@
 				42DC880F2B63F19500250F82 /* HeroesViewModel.swift in Sources */,
 				42DC88062B637F9E00250F82 /* UserDefaultsHelper.swift in Sources */,
 				42DC87B92B6185EA00250F82 /* LoginViewController.swift in Sources */,
-				424EC0A42B6660A9009CA460 /* HeroesCollectionViewController.swift in Sources */,
 				42DC87E32B61A7CB00250F82 /* NetworkError.swift in Sources */,
 				42DC88542B65127400250F82 /* TransformationsTableViewCell.swift in Sources */,
 				42DC881F2B6409E200250F82 /* UiimageView.swift in Sources */,
@@ -636,12 +627,11 @@
 				42DC87E72B61A83C00250F82 /* HTTPMethods.swift in Sources */,
 				424EC0A22B6660A3009CA460 /* DetailViewController.swift in Sources */,
 				42525D0C2B66CC2700644E24 /* ViewModelTest.swift in Sources */,
-				42DC88462B64FDDC00250F82 /* TransformationsViewModel.swift in Sources */,
 				42DC87C52B618D5E00250F82 /* GenericSatatusLoad.swift in Sources */,
-				42DC884C2B65016A00250F82 /* TransformationsViewController.swift in Sources */,
 				426FF1EB2B663DE0000F58FB /* UseCaseTest.swift in Sources */,
 				42DC88412B64F8AD00250F82 /* TransformationsUseCase.swift in Sources */,
 				42DC88182B6407ED00250F82 /* HeroCollectionViewCell.swift in Sources */,
+				4234B6F72B80F3C20000C12C /* HeroesCollectionViewController.swift in Sources */,
 				42DC87EB2B61A8A800250F82 /* HTTPResponseCodes.swift in Sources */,
 				42DC87FE2B62EDE000250F82 /* APIClient.swift in Sources */,
 				42DC880B2B638C6E00250F82 /* UIViewController.swift in Sources */,
@@ -654,17 +644,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4234B6F82B80F3C20000C12C /* HeroesCollectionViewController.swift in Sources */,
 				42DC87EC2B61A8A800250F82 /* HTTPResponseCodes.swift in Sources */,
 				42DC88102B63F19500250F82 /* HeroesViewModel.swift in Sources */,
 				42DC87FF2B62EDE000250F82 /* APIClient.swift in Sources */,
 				42DC87E82B61A83C00250F82 /* HTTPMethods.swift in Sources */,
 				42DC87C22B618B5E00250F82 /* LoginViewModel.swift in Sources */,
-				42DC88472B64FDDC00250F82 /* TransformationsViewModel.swift in Sources */,
 				424EC0A32B6660A4009CA460 /* DetailViewController.swift in Sources */,
 				42DC87C62B618D5E00250F82 /* GenericSatatusLoad.swift in Sources */,
 				42DC87BA2B6185EA00250F82 /* LoginViewController.swift in Sources */,
 				42DC880C2B638C6E00250F82 /* UIViewController.swift in Sources */,
-				424EC0A52B6660AA009CA460 /* HeroesCollectionViewController.swift in Sources */,
 				42DC88072B637F9E00250F82 /* UserDefaultsHelper.swift in Sources */,
 				42DC88422B64F8AD00250F82 /* TransformationsUseCase.swift in Sources */,
 				424EC0AD2B666119009CA460 /* HeroesUseCase.swift in Sources */,
@@ -672,7 +661,6 @@
 				42DC878D2B60EA1900250F82 /* DragonBallMVVMUITestsLaunchTests.swift in Sources */,
 				42DC87E42B61A7CB00250F82 /* NetworkError.swift in Sources */,
 				42DC88552B65127400250F82 /* TransformationsTableViewCell.swift in Sources */,
-				42DC884D2B65016A00250F82 /* TransformationsViewController.swift in Sources */,
 				42DC88202B6409E200250F82 /* UiimageView.swift in Sources */,
 				42DC88192B6407ED00250F82 /* HeroCollectionViewCell.swift in Sources */,
 				42DC87E02B61A75200250F82 /* EndPoints.swift in Sources */,
